@@ -3,12 +3,14 @@
     <div class="zt-container mt-4">
       <div id="accordion">
 
-        @foreach ( $faqs as $faq )
+        @foreach ( $faqs as $count=>$faq )
         <div class="card">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">{{ $faq->title }}</button></h5>
+            <div class="card-header" id="headingOne{{ $faq->id }}">
+              <h5 class="mb-0">
+                <button class="btn btn-link @if($count ==0) collapsed @endif" data-toggle="collapse" data-target="#collapseOne{{ $faq->id }}" aria-expanded="false" aria-controls="collapseOne">{{ $faq->title }}</button>
+            </h5>
             </div>
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapseOne{{ $faq->id }}" class="collapse" aria-labelledby="headingOne{{ $faq->id }}" data-parent="#accordion">
               <div class="card-body">
                 {{ $faq->body }}
             </div>
