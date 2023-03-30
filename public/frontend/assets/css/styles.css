@@ -955,6 +955,7 @@ input, textarea, select {
 .info_posts {
     padding: 10px;
     font-size: 12px;
+    margin-top: -75px;
 
 }
 
@@ -2010,6 +2011,9 @@ a, a:hover, a:focus {
   p .hero-description{
     font-size: 37px;
   }
+  .services  {
+    margin: 0;
+  }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -2017,6 +2021,7 @@ a, a:hover, a:focus {
     .hero-title {
     font-size: 25px;
   }
+
   p .hero-description{
     font-size: 20px;
   }
