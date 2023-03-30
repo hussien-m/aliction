@@ -278,7 +278,7 @@
         margin-bottom: 15px;
     }
     #header_logo .navbar-brand {
-        width: 50px;
+        width:  300px;
         overflow: hidden;
     }
     .sm-hidden {
@@ -286,7 +286,6 @@
     }
     .navbar-nav .nav-link {
        margin-left:10px;
-       right: 100px;
     }
     .image img{
         height: 200px;
