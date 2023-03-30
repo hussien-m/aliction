@@ -47,8 +47,8 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="price" class="form-label">السعر</label>
-                                    <input type="text" name="price" id="price" class="form-control" value="{{ $price->price }}">
+                                     <label for="price" class="form-label">السعر</label>
+                                     <input type="text" name="price" id="price" class="form-control" value="{{ $price->price }}">
                                 </div>
 
                                 <div class="mb-3">
