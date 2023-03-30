@@ -5,6 +5,7 @@ use App\Http\Controllers\Dashboard\ClientServiceController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Dashboard\FaqController;
 use App\Http\Controllers\Dashboard\HeaderController;
+use App\Http\Controllers\Dashboard\PageController;
 use App\Http\Controllers\Dashboard\SettingController;
 use App\Models\Admin;
 use Illuminate\Support\Facades\Hash;
@@ -39,6 +40,7 @@ Route::name('admin.')->prefix('admin')->group(function(){
         Route::resource('header',HeaderController::class);
         Route::resource('client-service',ClientServiceController::class);
         Route::resource('faq',FaqController::class);
+        Route::resource('page',PageController::class);
 
     });
 });

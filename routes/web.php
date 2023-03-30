@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Page;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +18,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('page/{id}',function($id){
+
+    $page = Page::findOrFail($id);
+
+    return view('page',compact('page'));
+
+})->name('show.page');
 
 Auth::routes();
 

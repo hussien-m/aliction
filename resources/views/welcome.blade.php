@@ -460,14 +460,8 @@
     <div class="subfooter">
       <div class="zt-container">
         <div class="d-flex justify-content-between align-items-center">
-          <ul class="d-flex justify-content-between align-items-center sm-hidden">
-            <li>
-              <a href="#">اتفاقية الاستخدام</a>
-            </li>
-            <li>
-              <a href="#">شروط الخصوصية</a>
-            </li>
-          </ul><span>جميع الحقوق محفوظة {{ $option->site_name }} {{ date("Y") }} &copy;</span>
+            <x-frontend.page-component/>
+            <span>جميع الحقوق محفوظة {{ $option->site_name }} {{ date("Y") }} &copy;</span>
         </div>
       </div>
     </div>

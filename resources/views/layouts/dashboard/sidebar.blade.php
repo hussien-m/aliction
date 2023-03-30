@@ -35,6 +35,7 @@
                                     <li><a href="{{ route("admin.faq.index") }}"><i class="dripicons-gear"></i>الاسئلة الشائعة</a></li>
                                     <li><a href="{{ route("admin.faq.index") }}"><i class="dripicons-gear"></i>الاسعار</a></li>
                                     <li><a href="{{ route("admin.faq.index") }}"><i class="dripicons-gear"></i>المميزات</a></li>
+                                    <li><a href="{{ route("admin.page.index") }}"><i class="dripicons-gear"></i>الصفحات</a></li>
                                 </ul>
                             </li>
                         </ul>
