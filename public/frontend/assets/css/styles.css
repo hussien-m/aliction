@@ -2026,3 +2026,12 @@ a, a:hover, a:focus {
     font-size: 20px;
   }
 }
+
+
+
+.steps .steps-content .steps-content-img {
+    margin-bottom: 25px;
+}
+img, svg {
+    vertical-align: middle;
+}

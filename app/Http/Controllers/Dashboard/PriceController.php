@@ -12,7 +12,7 @@ class PriceController extends Controller
     public function index()
     {
         $data['prices'] = Price::get();
-        $data['pricename'] = 'الاسعار';
+        $data['pagename'] = 'الاسعار';
         return view('dashboard.price.index',$data);
     }
 
@@ -51,7 +51,7 @@ class PriceController extends Controller
     public function edit($id)
     {
         $data['price'] = Price::findOrFail($id);
-        $data['pricename'] = 'الاسعار تعديل';
+        $data['pagename'] = 'الاسعار تعديل';
         return view('dashboard.price.edit',$data);
     }
 
