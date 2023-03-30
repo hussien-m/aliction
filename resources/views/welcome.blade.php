@@ -336,7 +336,7 @@
               <li>10 GB of storage</li>
               <li>Priority email support</li>
               <li>Help center access</li>
-            </ul><button type="button" class="btn btn-lg btn-block btn-outline-success">احصل عليها الان</button>
+            </ul><button type="button" class="btn btn-lg btn-block btn-outline-primary">احصل عليها الان</button>
           </div>
         </div>
         <div class="card mb-4 box-shadow">
@@ -350,7 +350,7 @@
               <li>15 GB of storage</li>
               <li>Phone and email support</li>
               <li>Help center access</li>
-            </ul><button type="button" class="btn btn-lg btn-block btn-outline-info">تواصل معنا</button>
+            </ul><button type="button" class="btn btn-lg btn-block btn-outline-primary">تواصل معنا</button>
           </div>
         </div>
       </div>
