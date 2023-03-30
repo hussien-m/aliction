@@ -32,6 +32,7 @@
                                     <li><a href="{{ route('admin.settings') }}"><i class="dripicons-gear"></i>اعدادات عامة</a></li>
                                     <li><a href="{{ route("admin.header.index") }}"><i class="dripicons-user-id"></i> الهيدر</a></li>
                                     <li><a href="{{ route("admin.client-service.index") }}"><i class="dripicons-user-group"></i> خدمة العملاء</a></li>
+                                    <li><a href="{{ route("admin.helpdesk.index") }}"><i class="dripicons-user-group"></i>مركز المساعدة</a></li>
                                     <li><a href="{{ route("admin.faq.index") }}"><i class="dripicons-web"></i>الاسئلة الشائعة</a></li>
                                     <li><a href="{{ route("admin.price.index") }}"><i class="dripicons-vibrate"></i>الاسعار</a></li>
                                     <li><a href="{{ route("admin.faq.index") }}"><i class="dripicons-star"></i>المميزات</a></li>

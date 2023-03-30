@@ -150,41 +150,7 @@
         <div class="main-block mb-5 mt-5">
           <h1 class="main-block-title text-center" style="color:#2586c8">احصل على مركز مساعدة في دقائق</h1>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="steps-content horizontal-steps">
-              <div class="row">
-                <div class="col-lg-2 col-md-4 col-sm-2 col-3"><img class="steps-content-img" src="https://zaetoon.hsoubcdn.com/assets/zaetoon/images/steps/khamsat/how1.svg?id=157c2c6997e3e52c3a54" loading="lazy" alt="how1"></div>
-                <div class="col-lg-10 col-md-12 col-sm-10 col-9">
-                  <h3 class="steps-content-title">أنشئ مركز المساعدة</h3>
-                  <p class="steps-content-description">أضف بيانات مركز المساعدة الأساسية وحدد الخطة المناسبة.</p><span class="steps-content-number">1</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="steps-content horizontal-steps">
-              <div class="row">
-                <div class="col-lg-2 col-md-4 col-sm-2 col-3"><img class="steps-content-img" src="https://zaetoon.hsoubcdn.com/assets/zaetoon/images/steps/khamsat/how2.svg?id=5b8dde2794df15f92160" loading="lazy" alt="how2"></div>
-                <div class="col-lg-10 col-md-12 col-sm-10 col-9">
-                  <h3 class="steps-content-title">خصص الإعدادات</h3>
-                  <p class="steps-content-description">أضف الدردشة المباشرة إلى موقعك، وخصص الهوية البصرية وأضف موظفي الدعم لمركز المساعدة.</p><span class="steps-content-number">2</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="steps-content horizontal-steps">
-              <div class="row">
-                <div class="col-lg-2 col-md-4 col-sm-2 col-3"><img class="steps-content-img" src="https://zaetoon.hsoubcdn.com/assets/zaetoon/images/steps/khamsat/how3.svg?id=ae071881b338a4063957" loading="lazy" alt="how3"></div>
-                <div class="col-lg-10 col-md-12 col-sm-10 col-9">
-                  <h3 class="steps-content-title">تواصل مع العملاء</h3>
-                  <p class="steps-content-description">ابدأ في الرد على استفسارات وأسئلة عملائك من مركز المساعدة.</p><span class="steps-content-number">3</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <x-frontend.how-component/>
       </div>
     </div>
   </div>
