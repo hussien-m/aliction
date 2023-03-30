@@ -4,6 +4,7 @@ use App\Http\Controllers\Dashboard\AdminLoginController;
 use App\Http\Controllers\Dashboard\ClientServiceController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Dashboard\FaqController;
+use App\Http\Controllers\Dashboard\FeaturesController;
 use App\Http\Controllers\Dashboard\HeaderController;
 use App\Http\Controllers\Dashboard\HelpdeskController;
 use App\Http\Controllers\Dashboard\PageController;
@@ -45,6 +46,7 @@ Route::name('admin.')->prefix('admin')->group(function(){
         Route::resource('page',PageController::class);
         Route::resource('price',PriceController::class);
         Route::resource('helpdesk',HelpdeskController::class);
+        Route::resource('features',FeaturesController::class);
 
     });
 });

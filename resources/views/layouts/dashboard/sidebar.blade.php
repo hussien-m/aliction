@@ -35,7 +35,7 @@
                                     <li><a href="{{ route("admin.helpdesk.index") }}"><i class="dripicons-user-group"></i>مركز المساعدة</a></li>
                                     <li><a href="{{ route("admin.faq.index") }}"><i class="dripicons-web"></i>الاسئلة الشائعة</a></li>
                                     <li><a href="{{ route("admin.price.index") }}"><i class="dripicons-vibrate"></i>الاسعار</a></li>
-                                    <li><a href="{{ route("admin.faq.index") }}"><i class="dripicons-star"></i>المميزات</a></li>
+                                    <li><a href="{{ route("admin.features.index") }}"><i class="dripicons-star"></i>المميزات</a></li>
                                     <li><a href="{{ route("admin.page.index") }}"><i class="dripicons-document"></i>الصفحات</a></li>
                                 </ul>
                             </li>
