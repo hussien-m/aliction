@@ -149,7 +149,9 @@
           <h2 class="main-block-title text-left mb-5" style="color:#2586c8">{{ $page->title }}</h2>
 
         </div>
-        <p class="features-content-description">{!! $page->content !!}</p>
+        <p class="features-content-description">
+            {!! $page->content !!}
+        </p>
 
       </div>
 

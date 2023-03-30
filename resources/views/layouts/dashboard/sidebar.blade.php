@@ -30,12 +30,12 @@
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="{{ route('admin.settings') }}"><i class="dripicons-gear"></i>اعدادات عامة</a></li>
-                                    <li><a href="{{ route("admin.header.index") }}"><i class="dripicons-gear"></i> الهيدر</a></li>
-                                    <li><a href="{{ route("admin.client-service.index") }}"><i class="dripicons-gear"></i> خدمة العملاء</a></li>
-                                    <li><a href="{{ route("admin.faq.index") }}"><i class="dripicons-gear"></i>الاسئلة الشائعة</a></li>
-                                    <li><a href="{{ route("admin.faq.index") }}"><i class="dripicons-gear"></i>الاسعار</a></li>
-                                    <li><a href="{{ route("admin.faq.index") }}"><i class="dripicons-gear"></i>المميزات</a></li>
-                                    <li><a href="{{ route("admin.page.index") }}"><i class="dripicons-gear"></i>الصفحات</a></li>
+                                    <li><a href="{{ route("admin.header.index") }}"><i class="dripicons-user-id"></i> الهيدر</a></li>
+                                    <li><a href="{{ route("admin.client-service.index") }}"><i class="dripicons-user-group"></i> خدمة العملاء</a></li>
+                                    <li><a href="{{ route("admin.faq.index") }}"><i class="dripicons-web"></i>الاسئلة الشائعة</a></li>
+                                    <li><a href="{{ route("admin.price.index") }}"><i class="dripicons-vibrate"></i>الاسعار</a></li>
+                                    <li><a href="{{ route("admin.faq.index") }}"><i class="dripicons-star"></i>المميزات</a></li>
+                                    <li><a href="{{ route("admin.page.index") }}"><i class="dripicons-document"></i>الصفحات</a></li>
                                 </ul>
                             </li>
                         </ul>
