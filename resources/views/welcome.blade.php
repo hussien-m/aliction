@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="{{ asset('frontend/assets/css/styles.css') }}">
   <link rel="stylesheet" href="{{ asset('frontend/assets/css/styles-rtl.css') }}">
   <link rel="stylesheet" href="{{ asset('frontend/assets/css/responsive.css') }}">
-  <link rel="stylesheet" href="{{ asset('frontend/assets/css/all.css') }}">
   <link rel="stylesheet" href="{{ asset('frontend/assets/css/flaticon.css') }}">
   <link rel="stylesheet" href="{{ asset('frontend/assets/css/footer.css') }}">
   <link rel="stylesheet" href="{{ asset('frontend/assets/css/login.css') }}">
@@ -23,6 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Cairo&amp;family=Noto+Kufi+Arabic&amp;family=Noto+Naskh+Arabic&amp;family=Noto+Sans+Arabic:wght@500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
          *{
          font-family: 'Noto Kufi Arabic', sans-serif;
@@ -42,19 +42,24 @@
   <section id="header_logo" class="">
     <div class="zt-container">
       <nav class="navbar navbar-expand-lg navbar-fixed-top">
-        <a href="#" class="nav-link" style="font-size: 25px;" id="btn-bars"></a> <a class="navbar-brand" href="http://new.deal/ar/home"><img src="frontend/assets/images/logofull.png" width="120" alt="logofull"></a>
+        <a href="#" class="nav-link" style="font-size: 25px;" id="btn-bars">
+        <span class="fa fa-bars"></span>
+        </a> <a class="navbar-brand" href="http://new.deal/ar/home"><img src="frontend/assets/images/logofull.png" width="120" alt="logofull"></a>
         <div class="d-flex justify-content-between align-items-center w-100">
           <ul class="navbar-nav">
             <li class="dropdown nav-item dropdown-mega">
-              <a href="#features" class="dropdown-toggle nav-link" aria-expanded="true">المميزات</a>
+              <a href="#features" class="dropdown-toggle nav-link" aria-expanded="true"><span class="fa fa-star"></span>
+              المميزات
+            </a>
             </li>
             <li class="dropdown nav-item dropdown-mega">
-              <a href="#price" class="dropdown-toggle nav-link" aria-expanded="true">الأسعار</a>
+              <a href="#price" class="dropdown-toggle nav-link" aria-expanded="true"><span class="fa fa-usd"></span>
+              الأسعار</a>
             </li>
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item btn-nav sm-hidden">
-              <a href="http://new.deal/ar/login" class="nav-link">دخول</a>
+              <a href="#" class="nav-link">دخول</a>
             </li>
 
           </ul>
@@ -434,13 +439,19 @@
           <h2>تابع أليكشن</h2>
           <ul class="footer-menu d-flex">
             <li class="mr-2" style="list-style: none">
-              <a class="linkSocial facebook" href="http://www.facebook.com/" target="_blank"></a>
+              <a class="linkSocial facebook" href="http://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
             </li>
             <li style="list-style: none">
-              <a href="http://www.twitter.com/" class="linkSocial twitter" target="_blank"></a>
+              <a href="http://www.twitter.com/" class="linkSocial twitter" target="_blank">
+                <span class="fa fa-facebook"></span>
+            </a>
             </li>
             <li class="mr-4" style="list-style: none">
-              <a href="http://www.instagram.com/" class="linkSocial twitter" target="_blank"></a>
+              <a href="http://www.instagram.com/" class="linkSocial twitter" target="_blank">
+                <span class="fas fa-google"></span>
+            </a>
             </li>
           </ul>
         </div>

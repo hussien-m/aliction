@@ -44,7 +44,7 @@
     position: relative;
     display: flex;
     margin-bottom: 20px;
-    color: #2586c8 !important; 
+    color: #2586c8 !important;
     justify-content: center;
     align-items: center;
     width: fit-content;
@@ -532,7 +532,7 @@ Component: Flex css
     padding: 9px 15px !important;
     border: 1px solid;
     line-height: 27px;
-    
+
 }
 .nav-item.nav_user .nav-link{
     padding: 0 !important;
@@ -674,7 +674,7 @@ Component: Flex css
     padding: 15px 20px;
     font-size: 16px;
     background-color: var(--text-color);
-    
+
 }
 
 
@@ -955,7 +955,7 @@ input, textarea, select {
 .info_posts {
     padding: 10px;
     font-size: 12px;
- 
+
 }
 
 .activities h4,
@@ -1858,7 +1858,7 @@ a.submit-button {
 
 .saphqa-sidebar {
     position: fixed;
-    top: 62px;
+    top: 75px;
     right: 0;
     bottom: 0;
     -webkit-transform: translateX(260px);
@@ -1878,7 +1878,7 @@ a.submit-button {
 
 
 .activities h4, .events h4, .tweets h4, .bids h4, .projects h4, .vote h4, .ads h4, .services h4, .info_posts h4 {
-    
+
     color:#000000;
 }
 
@@ -1888,11 +1888,11 @@ a.submit-button {
     margin-bottom: 22px;
 }
 .features p {
-    
+
         color: #545454;
         line-height: 28px;
         font-size: 15px;
-    
+
 }
 
 h4 {
@@ -1987,8 +1987,8 @@ p {
 
 a, a:hover, a:focus {
     color: var(--sub);
-    
-    
+
+
 }
 
 
