@@ -57,9 +57,7 @@
             <li class="nav-item btn-nav sm-hidden">
               <a href="http://new.deal/ar/login" class="nav-link">دخول</a>
             </li>
-            <li class="nav-item btn-nav sm-hidden">
-              <a href="http://new.deal/ar/new/user" class="nav-link">إبدأ الأن</a>
-            </li>
+
           </ul>
         </div>
       </nav>

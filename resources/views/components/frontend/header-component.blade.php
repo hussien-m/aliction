@@ -5,7 +5,7 @@
         <div class="col-lg-6 text-lg-start align-self-center order-md-1">
           <h1 class="hero-title">{{ $header->title }}</h1>
           <p class="hero-description">{{ $header->body }}</p>
-            <a href="https://zaetoon.com/helpdesks/create" class="btn btn-primary btn-lg mt-3">ابدأ الآن مجاناً</a>
+            <a href="#" class="btn btn-primary btn-lg mt-3">ابدأ الآن مجاناً</a>
         </div>
       </div>
     </section>
