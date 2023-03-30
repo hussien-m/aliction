@@ -1,8 +1,8 @@
 <section class="section_search p5" style="background-color:#f9f9f9" id="price">
     <div class="zt-container main-container mb-5 mt-5">
       <div class="text-center">
-        <h1 style="color: #2586c8;">الأسعار</h1>
-        <p class="main-block-paragraph">وفر قيمة شهرين عند الاشتراك بشكل سنوي</p>
+        <h1 style="color: #2586c8;">{{ $title_section->price_title }}</h1>
+        <p class="main-block-paragraph">{{ $title_section->price_title2 }}</p></p>
       </div>
       <div class="card-deck mb-3 text-center">
         @foreach ( $prices as $price )

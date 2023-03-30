@@ -2,8 +2,8 @@
     <div class="zt-container main-container">
       <div class="features-section block">
         <div class="main-block">
-          <h2 class="main-block-title text-center" style="color: #2586c8;">كل ما يحتاجه عملائك وفريقك في مكان واحد</h2>
-          <p class="main-block-paragraph">برنامج واحد يجمع كل الميزات والأدوات لتقديم تجربة تواصل مميزة لعملائك</p>
+          <h2 class="main-block-title text-center" style="color: #2586c8;"> {{ $title_section->feature_title }}</h2>
+          <p class="main-block-paragraph">{{ $title_section->feature_title2 }}</p>
         </div>
 
 

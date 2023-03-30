@@ -2,7 +2,7 @@
     <div class="zt-container mb-5">
       <div class="block">
         <div class="main-block">
-          <h1 class="main-block-title text-center mb-5" style="color:#2586c8">كيف يحسن أليكشن تجربة تواصل عملائك</h1>
+          <h1 class="main-block-title text-center mb-5" style="color:#2586c8">{{ $title_section->client_title }}</h1>
         </div>
         <div class="row">
           @foreach ( $clients as $client )

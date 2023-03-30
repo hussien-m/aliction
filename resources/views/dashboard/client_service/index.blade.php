@@ -13,6 +13,16 @@
 @section('content')
 
 <div class="card p-3">
+    <div class="card p-3">
+        <form method="post" action="{{ route('admin.save.client') }}">
+            @csrf
+            <div class="mb-3">
+                <label for="client_title">عنوان القسم</label>
+                <input type="text" class="form-control" name="client_title" value="{{ $title_section->client_title }}">
+            </div>
+            <button class="btn btn-primary" type="submit">حفظ</button>
+        </form>
+    </div>
     <div class="table-responsive">
         <a href="{{ route('admin.client-service.create') }}" class="btn btn-primary mb-2 mt-2">أضف جديد</a>
         <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">

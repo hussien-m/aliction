@@ -1,5 +1,5 @@
 <section class="how_its_work py-5" style="background-color: #fff;">
-    <h2 class="title text-center sec_title" style="color: #2586c8;">الأسئلة الشائعة</h2>
+    <h2 class="title text-center sec_title" style="color: #2586c8;">{{ $title_section->faq_title }}</h2>
     <div class="zt-container mt-4">
       <div id="accordion">
 

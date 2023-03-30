@@ -11,7 +11,16 @@
 
         @endsection
 @section('content')
-
+<div class="card p-3">
+    <form method="post" action="{{ route('admin.save.faq') }}">
+        @csrf
+        <div class="mb-3">
+            <label for="faq_title">عنوان القسم</label>
+            <input type="text" class="form-control" name="faq_title" value="{{ $title_section->faq_title }}">
+        </div>
+        <button class="btn btn-primary" type="submit">حفظ</button>
+    </form>
+</div>
 <div class="card p-3">
     <div class="table-responsive">
         <a href="{{ route('admin.faq.create') }}" class="btn btn-primary mb-2 mt-2">أضف جديد</a>

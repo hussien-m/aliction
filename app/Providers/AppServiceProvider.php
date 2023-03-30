@@ -25,6 +25,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         $data['option'] = DB::table('settings')->first();
+        $data['title_section'] = DB::table('section_titles')->first();
 
         view()->composer('*', function ($view) use ($data) {
 

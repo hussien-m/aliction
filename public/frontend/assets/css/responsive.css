@@ -286,6 +286,7 @@
     }
     .navbar-nav .nav-link {
        margin-left:10px;
+       right: 100px;
     }
     .image img{
         height: 200px;

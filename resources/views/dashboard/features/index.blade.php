@@ -11,7 +11,20 @@
 
         @endsection
 @section('content')
-
+<div class="card p-3">
+    <form method="post" action="{{ route('admin.save.feature') }}">
+        @csrf
+        <div class="mb-3">
+            <label for="feature_title">عنوان القسم</label>
+            <input type="text" class="form-control" name="feature_title" value="{{ $title_section->feature_title}}">
+        </div>
+        <div class="mb-3">
+            <label for="feature_title2"> العنوان الفرعي</label>
+            <input type="text" class="form-control" name="feature_title2" value="{{ $title_section->feature_title2 }}">
+        </div>
+        <button class="btn btn-primary" type="submit">حفظ</button>
+    </form>
+</div>
 <div class="card p-3">
     <div class="table-responsive">
         <a href="{{ route('admin.features.create') }}" class="btn btn-primary mb-2 mt-2">أضف جديد</a>

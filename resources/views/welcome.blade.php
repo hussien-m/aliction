@@ -148,7 +148,7 @@
     <div class="zt-container main-container">
       <div class="block">
         <div class="main-block mb-5 mt-5">
-          <h1 class="main-block-title text-center" style="color:#2586c8">احصل على مركز مساعدة في دقائق</h1>
+          <h1 class="main-block-title text-center" style="color:#2586c8">{{ $title_section->how_title }}</h1>
         </div>
         <x-frontend.how-component/>
       </div>

@@ -11,7 +11,16 @@
 
         @endsection
 @section('content')
-
+<div class="card p-3">
+    <form method="post" action="{{ route('admin.save.how') }}">
+        @csrf
+        <div class="mb-3">
+            <label for="how">عنوان القسم</label>
+            <input type="text" class="form-control" name="how_title" value="{{ $title_section->how_title }}">
+        </div>
+        <button class="btn btn-primary" type="submit">حفظ</button>
+    </form>
+</div>
 <div class="card p-3">
     <div class="table-responsive">
         <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
