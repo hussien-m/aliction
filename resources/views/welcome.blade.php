@@ -57,12 +57,6 @@
               الأسعار</a>
             </li>
           </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item btn-nav sm-hidden">
-              <a href="#" class="nav-link">دخول</a>
-            </li>
-
-          </ul>
         </div>
       </nav>
     </div>
