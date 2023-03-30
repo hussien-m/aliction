@@ -47,6 +47,11 @@
         </a> <a class="navbar-brand" href="/"><img src="{{ asset('images/settings/'.$option->logo) }}" width="120" alt="logofull"></a>
         <div class="d-flex justify-content-between align-items-center w-100">
           <ul class="navbar-nav">
+           
+
+          </ul>
+
+          <ul class="navbar-nav">
             <li class="dropdown nav-item dropdown-mega">
               <a href="#features" class="dropdown-toggle nav-link" aria-expanded="true"><span class="fa fa-star"></span>
               المميزات
