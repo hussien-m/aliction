@@ -69,34 +69,34 @@
     <div class="saphqa-sidebar-wrapper">
       <ul class="saphqa-sidebar-menu">
         <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-          <a class="saphqa-sidebar-menu-item-link" href="https://zaetoon.com/helpdesks">لوحة التحكم</a>
+          <a class="saphqa-sidebar-menu-item-link" href="#helpdesks">لوحة التحكم</a>
         </li>
         <li class="saphqa-sidebar-menu-item">
           <a class="saphqa-sidebar-menu-item-link">المميزات</a>
           <ul class="saphqa-sidebar-menu">
             <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="https://zaetoon.com/chat">الدردشة المباشرة</a>
+              <a class="saphqa-sidebar-menu-item-link" href="#chat">الدردشة المباشرة</a>
             </li>
             <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="https://zaetoon.com/conversations">إدارة المحادثات</a>
+              <a class="saphqa-sidebar-menu-item-link" href="#conversations">إدارة المحادثات</a>
             </li>
             <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="https://zaetoon.com/knowledgebase">قاعدة المعرفة</a>
+              <a class="saphqa-sidebar-menu-item-link" href="#knowledgebase">قاعدة المعرفة</a>
             </li>
             <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="https://zaetoon.com/shared-inbox">صناديق البريد</a>
+              <a class="saphqa-sidebar-menu-item-link" href="#shared-inbox">صناديق البريد</a>
             </li>
             <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="https://zaetoon.com/permissions">الصلاحيات</a>
+              <a class="saphqa-sidebar-menu-item-link" href="#permissions">الصلاحيات</a>
             </li>
             <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="https://zaetoon.com/brand">تخصيص النطاق والهوية</a>
+              <a class="saphqa-sidebar-menu-item-link" href="#brand">تخصيص النطاق والهوية</a>
             </li>
             <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="https://zaetoon.com/statistics">الإحصائيات والتقارير</a>
+              <a class="saphqa-sidebar-menu-item-link" href="#statistics">الإحصائيات والتقارير</a>
             </li>
             <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="https://zaetoon.com/webhooks">الخطافات</a>
+              <a class="saphqa-sidebar-menu-item-link" href="#webhooks">الخطافات</a>
             </li>
           </ul>
         </li>
@@ -107,16 +107,16 @@
           <a class="saphqa-sidebar-menu-item-link">أليكشن</a>
           <ul class="saphqa-sidebar-menu">
             <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="https://zaetoon.com/about">عن أليكشن</a>
+              <a class="saphqa-sidebar-menu-item-link" href="#about">عن أليكشن</a>
             </li>
             <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="https://zaetoon.com/terms">شروط الاستخدام</a>
+              <a class="saphqa-sidebar-menu-item-link" href="#terms">شروط الاستخدام</a>
             </li>
             <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="https://zaetoon.com/privacy">بيان الخصوصية</a>
+              <a class="saphqa-sidebar-menu-item-link" href="#privacy">بيان الخصوصية</a>
             </li>
             <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="https://zaetoon.com/redirect/helpdesk" target="_blank">مركز المساعدة</a>
+              <a class="saphqa-sidebar-menu-item-link" href="#redirect/helpdesk" target="_blank">مركز المساعدة</a>
             </li>
           </ul>
         </li>
@@ -197,7 +197,7 @@
             <div class="col-md-6 align-self-center order-1 order-md-first">
               <div class="features pe-5">
                 <h4>دردشة مباشرة</h4>
-                <p>أضف الدردشة المباشرة إلى موقعك الإلكتروني أو تطبيق الجوال ليتمكن عملائك من التواصل معك مباشرة.</p><a href="https://zaetoon.com/chat" class="btn btn-outline-primary my-2">المزيد عن الدردشة المباشرة</a>
+                <p>أضف الدردشة المباشرة إلى موقعك الإلكتروني أو تطبيق الجوال ليتمكن عملائك من التواصل معك مباشرة.</p><a href="#chat" class="btn btn-outline-primary my-2">المزيد عن الدردشة المباشرة</a>
               </div>
             </div>
           </div>
@@ -208,7 +208,7 @@
             <div class="col-md-6 align-self-center order-1 order-md-first">
               <div class="features ps-5">
                 <h4>إدارة المحادثات</h4>
-                <p>احصل على جميع الأدوات التي تحتاجها لإدارة المحادثات وتنظيم الردود على العملاء في مركز المساعدة.</p><a href="https://zaetoon.com/conversations" class="btn btn-outline-primary my-2">المزيد عن إدارة المحادثات</a>
+                <p>احصل على جميع الأدوات التي تحتاجها لإدارة المحادثات وتنظيم الردود على العملاء في مركز المساعدة.</p><a href="#conversations" class="btn btn-outline-primary my-2">المزيد عن إدارة المحادثات</a>
               </div>
             </div>
           </div>
@@ -219,7 +219,7 @@
             <div class="col-md-6 align-self-center order-1">
               <div class="features pe-5">
                 <h4>قاعدة معرفة</h4>
-                <p>وفر خدمة دعم ذاتية متكاملة لعملائك تحتوي شروحات ومعلومات عن منتجك تمكن العميل من الوصول للحلول المناسبة دون الحاجة للتواصل معك.</p><a href="https://zaetoon.com/knowledgebase" class="btn btn-outline-primary my-2">المزيد عن قاعدة المعرفة</a>
+                <p>وفر خدمة دعم ذاتية متكاملة لعملائك تحتوي شروحات ومعلومات عن منتجك تمكن العميل من الوصول للحلول المناسبة دون الحاجة للتواصل معك.</p><a href="#knowledgebase" class="btn btn-outline-primary my-2">المزيد عن قاعدة المعرفة</a>
               </div>
             </div>
           </div>
@@ -230,7 +230,7 @@
             <div class="col-md-6 align-self-center order-1 order-md-first">
               <div class="features ps-5">
                 <h4>صناديق بريد مشتركة</h4>
-                <p>نظم رسائل العملاء بربط أكثر من بريد إلكتروني بمركز المساعدة وتحديد بريد واحد أو أكثر لكل صندوق مع تخصيصها بما يناسب عملك.</p><a href="https://zaetoon.com/shared-inbox" class="btn btn-outline-primary my-2">المزيد عن صناديق البريد</a>
+                <p>نظم رسائل العملاء بربط أكثر من بريد إلكتروني بمركز المساعدة وتحديد بريد واحد أو أكثر لكل صندوق مع تخصيصها بما يناسب عملك.</p><a href="#shared-inbox" class="btn btn-outline-primary my-2">المزيد عن صناديق البريد</a>
               </div>
             </div>
           </div>
@@ -241,7 +241,7 @@
             <div class="col-md-6 align-self-center order-1">
               <div class="features pe-5">
                 <h4>نظام صلاحيات متطور</h4>
-                <p>تحكم بسير العمل بضبط صلاحيات الوصول المناسبة لفرق العمل سواء لصناديق البريد أو معلومات العملاء وقاعدة المعرفة وإعدادات المركز.</p><a href="https://zaetoon.com/permissions" class="btn btn-outline-primary my-2">المزيد عن الصلاحيات</a>
+                <p>تحكم بسير العمل بضبط صلاحيات الوصول المناسبة لفرق العمل سواء لصناديق البريد أو معلومات العملاء وقاعدة المعرفة وإعدادات المركز.</p><a href="#permissions" class="btn btn-outline-primary my-2">المزيد عن الصلاحيات</a>
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@
             <div class="col-md-6 align-self-center order-1 order-md-first">
               <div class="features ps-5">
                 <h4>تخصيص النطاق والهوية البصرية</h4>
-                <p>أضف مركز المساعدة لنطاق فرعي باسم موقعك وخصص هوية المركز البصرية بما يتناسب مع علامتك التجارية بإضافة الشعار والأيقونة والألوان.</p><a href="https://zaetoon.com/brand" class="btn btn-outline-primary my-2">المزيد عن التخصيص</a>
+                <p>أضف مركز المساعدة لنطاق فرعي باسم موقعك وخصص هوية المركز البصرية بما يتناسب مع علامتك التجارية بإضافة الشعار والأيقونة والألوان.</p><a href="#brand" class="btn btn-outline-primary my-2">المزيد عن التخصيص</a>
               </div>
             </div>
           </div>
@@ -263,7 +263,7 @@
             <div class="col-md-6 align-self-center order-1">
               <div class="features pe-5">
                 <h4>إحصائيات وتقارير شاملة</h4>
-                <p>يوفر زيتون بيانات مفصلة عن حالة صناديق البريد والمحادثات وأداء الفرق والأفراد، بالإضافة إلى تقرير بالكلمات الأكثر بحثاً من عملائك بقاعدة المعرفة.</p><a href="https://zaetoon.com/statistics" class="btn btn-outline-primary my-2">المزيد عن الإحصائيات</a>
+                <p>يوفر زيتون بيانات مفصلة عن حالة صناديق البريد والمحادثات وأداء الفرق والأفراد، بالإضافة إلى تقرير بالكلمات الأكثر بحثاً من عملائك بقاعدة المعرفة.</p><a href="#statistics" class="btn btn-outline-primary my-2">المزيد عن الإحصائيات</a>
               </div>
             </div>
           </div>
@@ -274,7 +274,7 @@
             <div class="col-md-6 align-self-center order-1 order-md-first">
               <div class="features ps-5">
                 <h4>واجهة برمجية API ونظام خطافات Webhooks</h4>
-                <p>بسهولة يمكنك إضافة خصائص أو تطويرات إضافية اختيارية مثل ربط زيتون بإشعارات موقعك الداخلية عن طريق نظام Webhooks متقدم.</p><a href="https://zaetoon.com/webhooks" class="btn btn-outline-primary my-2">المزيد عن الواجهات البرمجية</a>
+                <p>بسهولة يمكنك إضافة خصائص أو تطويرات إضافية اختيارية مثل ربط زيتون بإشعارات موقعك الداخلية عن طريق نظام Webhooks متقدم.</p><a href="#webhooks" class="btn btn-outline-primary my-2">المزيد عن الواجهات البرمجية</a>
               </div>
             </div>
           </div>
