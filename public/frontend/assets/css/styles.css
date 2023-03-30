@@ -2015,7 +2015,7 @@ a, a:hover, a:focus {
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
     .hero-title {
-    font-size: 26px;
+    font-size: 25px;
   }
   p .hero-description{
     font-size: 20px;
