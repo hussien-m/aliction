@@ -14,7 +14,6 @@
               <div class="col-md-6 align-self-center order-1 order-md-first">
                 <div class="features pe-5">
                   <h4>{{ $f->title }}</h4>
-                  <p>{{ $f->body }}</p><a href="#chat" class="btn btn-outline-primary my-2">المزيد عن  {{ $f->title }}</a>
                 </div>
               </div>
             </div>
