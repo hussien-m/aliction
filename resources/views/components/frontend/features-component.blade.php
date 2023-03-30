@@ -10,7 +10,7 @@
         @foreach ( $features as $f )
         <div class="with-image pb-90">
             <div class="row">
-              <div class="col-md-6 order-2 mt-md-0 mt-4"><img src="https://zaetoon.hsoubcdn.com/assets/zaetoon/images/main-page/chat.png?id=ff055e43289e047d2f67" loading="lazy" width="100%" alt="chat"></div>
+              <div class="col-md-6 order-2 mt-md-0 mt-4"><img src="{{ asset('images/features/'.$f->image) }}" loading="lazy" width="100%" alt="chat"></div>
               <div class="col-md-6 align-self-center order-1 order-md-first">
                 <div class="features pe-5">
                   <h4>{{ $f->title }}</h4>
