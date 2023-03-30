@@ -44,7 +44,7 @@
       <nav class="navbar navbar-expand-lg navbar-fixed-top">
         <a href="#" class="nav-link" style="font-size: 25px;" id="btn-bars">
         <span class="fa fa-bars"></span>
-        </a> <a class="navbar-brand" href="http://new.deal/ar/home"><img src="frontend/assets/images/logofull.png" width="120" alt="logofull"></a>
+        </a> <a class="navbar-brand" href="http://new.deal/ar/home"><img src="{{ asset('images/settings/'.$option->logo) }}" width="120" alt="logofull"></a>
         <div class="d-flex justify-content-between align-items-center w-100">
           <ul class="navbar-nav">
             <li class="dropdown nav-item dropdown-mega">
