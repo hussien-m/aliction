@@ -44,10 +44,10 @@
       <nav class="navbar navbar-expand-lg navbar-fixed-top">
         <a href="#" class="nav-link" style="font-size: 25px;" id="btn-bars">
         <span class="fa fa-bars"></span>
-        </a> <a class="navbar-brand" href="/"><img src="{{ asset('images/settings/'.$option->logo) }}" width="120" alt="logofull"></a>
+        </a> <a class="navbar-brand" href="/"><img src="{{ asset('images/settings/'.$option->logo) }}" width="160" height="50" alt="logofull"></a>
         <div class="d-flex justify-content-between align-items-center w-100">
           <ul class="navbar-nav">
-           
+
 
           </ul>
 
