@@ -183,7 +183,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <p class="copyrights text-center">
-                        © 2023 <a style="color:#2586c8" href="{{ url('/') }}" target="_blank">{{ $option->site_name }}</a>. جميع الحقوق محفوظة.
+                        © 2023 <a style="color:#2586c8" href="{{ url('/') }}" target="_blank">أليكشن</a>. جميع الحقوق محفوظة.
                     </p>
                 </div>
             </div>
