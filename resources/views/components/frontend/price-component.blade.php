@@ -17,9 +17,10 @@
               <h5 class="my-0 font-weight-normal">{{ $price->name }}</h5>
             </div>
             <div class="card-body">
-              <h4 class="card-title pricing-card-title">
+              <h4 class="card-title pricing-card-titl mt-3">
                 <b>{{ $price->price }}</b>
             </h4>
+            <hr>
               <ul class="list-unstyled mt-3 mb-4">
                 @for($i = 0; $i < count($fets); $i++)
                 <li class="mx-5" style="text-align: justify"> <span class="fa fa-check"></span> {{  $fets[$i] }}</li>
