@@ -163,7 +163,7 @@
     <div class="container main-container pt-5 pb-3">
         <div class="row">
             <div class="col-lg-8 col-md-6 text-start">
-                <img class="footer-brand" src="{{ asset('images/settings/'.$option->logo) }}" loading="lazy" alt="">
+                <img class="footer-brand" src="{{ asset('images/settings/'.$option->footer_logo) }}" loading="lazy" alt="">
                 <p class="footer-description">{{ $option->site_desc }}</p>
                 <div class="footer-social">
 
