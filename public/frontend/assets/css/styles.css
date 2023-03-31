@@ -2014,6 +2014,9 @@ a, a:hover, a:focus {
   .services  {
     margin: 0;
   }
+  .logopic  {
+    width: 160px;
+  }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -2024,6 +2027,10 @@ a, a:hover, a:focus {
 
   p .hero-description{
     font-size: 20px;
+  }
+
+  .logopic  {
+    width: 121px;
   }
 }
 
