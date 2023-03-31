@@ -66,6 +66,7 @@
       </nav>
     </div>
   </section><!-- End Section Header -->
+
   <!-- End Section navbar -->
   <!-- Start Section sidebar -->
   <aside class="saphqa-sidebar">
@@ -160,111 +161,39 @@
 
 
   <x-frontend.faq-component/>
-<!-- End Section FAQ-->
-  <!-- Section Footer -->
-  <footer id="footer" style="background-color: #f9f9f9;">
-    <div class="zt-container">
-      <div class="row">
-        <div class="home-info col-md-3 mb-3">
-          <h2>موقع أليكشن</h2>
-          <ul class="footer-menu">
-            <li class="mr-4">
-              <a href="#">حول الموقع</a>
-            </li>
-            <li class="mr-4">
-              <a href="#">كيف يعمل الموقع</a>
-            </li>
-            <li class="mr-4">
-              <a href="#">الأسئلة الشائعة</a>
-            </li>
-            <li class="mr-4">
-              <a href="#">اعرف كيف نضمن حقوقك</a>
-            </li>
-          </ul>
-        </div>
-        <div class="home-info col-md-6 mb-3">
-          <h2>مدونة أليكشن</h2>
-          <ul class="footer-menu">
-            <li class="mr-4">
-              <a href="#">5 طرق لتسويق مشروعك باستخدام التعليق الصوتي</a>
-            </li>
-            <li class="mr-4">
-              <a href="#">10 مهارات ضرورية لإدارة حسابات شبكات التواصل الاجتماعي</a>
-            </li>
-            <li class="mr-4">
-              <a href="#">كيف تُحسِّن محتوى قناة اليوتيوب لمحركات البحث؟</a>
-            </li>
-            <li class="mr-4">
-              <a href="#">كيف تنشئ بودكاست ناجح يسوّق لمشروعك بفعالية؟</a>
-            </li>
-          </ul>
-        </div>
-        <div class="home-info col-md-3 mb-3">
-          <h2>مجتمع أليكشن</h2>
-          <ul class="footer-menu">
-            <li class="mr-4">
-              <a href="#">نماذج أعمال قمت بتنفيذها</a>
-            </li>
-            <li class="mr-4">
-              <a href="#">طلبات الخدمات غير الموجودة</a>
-            </li>
-            <li class="mr-4">
-              <a href="#">تجارب وقصص المستخدمين</a>
-            </li>
-            <li class="mr-4">
-              <a href="#">أمور عامة حول أليكشن</a>
-            </li>
-          </ul>
-        </div>
-        <div class="home-info col-md-3 mb-3">
-          <h2>احصل على المساعدة</h2>
-          <ul class="footer-menu">
-            <li class="mr-4" style="list-style: none">
-              <a href="#">قاعدة المعرفة</a>
-            </li>
-            <li class="mr-4" style="list-style: none">
-              <a href="#">مركز المساعدة</a>
-            </li>
-          </ul>
-        </div>
-        <div class="home-info col-md-6 mb-3">
-          <h2>وسائل الدفع</h2>
-          <ul class="footer-menu">
-            <li class="mr-4" style="list-style: none"><img src="http://new.deal/frontend/assets/images/payments.png" width="270" alt="payments"></li>
-          </ul>
-        </div>
-        <div class="home-info col-md-3 mb-3">
-          <h2>تابع أليكشن</h2>
-          <ul class="footer-menu d-flex">
-            <li class="mr-2" style="list-style: none">
-              <a class="linkSocial facebook" href="http://www.facebook.com/" target="_blank">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            </li>
-            <li style="list-style: none">
-              <a href="http://www.twitter.com/" class="linkSocial twitter" target="_blank">
-                <span class="fa fa-facebook"></span>
-            </a>
-            </li>
-            <li class="mr-4" style="list-style: none">
-              <a href="http://www.instagram.com/" class="linkSocial twitter" target="_blank">
-                <span class="fas fa-google"></span>
-            </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="subfooter">
-      <div class="zt-container">
-        <div class="d-flex justify-content-between align-items-center">
+
+<footer>
+    <div class="container main-container pt-5 pb-3">
+        <div class="row">
+            <div class="col-lg-8 col-md-6 text-start">
+                <img class="footer-brand" src="{{ asset('images/settings/'.$option->logo) }}" loading="lazy" alt="">
+                <p class="footer-description">{{ $option->meta_desc }}</p>
+                <div class="footer-social">
+
+                    <a href="{{ $option->twitter }}" target="_blank">
+                        <div class="footer-social-icon">
+                            <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path></svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
             <x-frontend.page-component/>
-            <span>جميع الحقوق محفوظة {{ $option->site_name }} {{ date("Y") }} &copy;</span>
         </div>
-      </div>
     </div>
-    <div class=""></div>
-  </footer><!-- End Section Footer -->
+    <div class="middle-footer">
+        <div class="container main-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="copyrights text-center">
+                        © 2023 <a style="color:#2586c8" href="{{ url('/') }}" target="_blank">{{ $option->site_name }}</a>. جميع الحقوق محفوظة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
   <!-- Scripts -->
   <script src="{{ asset('frontend/assets/js/jquery-1.12.4.min.js') }}"></script>
   <script src="{{ asset('frontend/assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
