@@ -39,34 +39,33 @@
 </head><!-- End Head -->
 <!-- Section navbar -->
 <body class="saphqa-header-visible saphqa">
-  <section id="header_logo" class="">
-    <div class="zt-container">
-      <nav class="navbar navbar-expand-lg navbar-fixed-top">
-        <a href="#" class="nav-link" style="font-size: 25px;" id="btn-bars">
-        <span class="fa fa-bars"></span>
-        </a> <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ asset('images/settings/'.$option->logo) }}" width="120" alt="logofull"></a>
-        <div class="d-flex justify-content-between align-items-center w-100">
-          <ul class="navbar-nav">
-            <li class="dropdown nav-item dropdown-mega">
-              <a href="#features" class="dropdown-toggle nav-link" aria-expanded="true"><span class="fa fa-star"></span>
-              المميزات
-            </a>
-            </li>
-            <li class="dropdown nav-item dropdown-mega">
-              <a href="#price" class="dropdown-toggle nav-link" aria-expanded="true"><span class="fa fa-usd"></span>
-              الأسعار</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item btn-nav sm-hidden">
-              <a href="#" class="nav-link">دخول</a>
-            </li>
+    <section id="header_logo" class="">
+        <div class="zt-container">
+          <nav class="navbar navbar-expand-lg navbar-fixed-top">
+            <a href="#" class="nav-link" style="font-size: 25px;" id="btn-bars">
+            <span class="fa fa-bars"></span>
+            </a> <a class="navbar-brand" href="{{ url('/') }}"><img class="logopic" src="{{ asset('images/settings/'.$option->logo) }}"   alt="logofull"></a>
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <ul class="navbar-nav">
 
-          </ul>
+
+              </ul>
+
+              <ul class="navbar-nav">
+                <li class="dropdown nav-item dropdown-mega">
+                  <a href="#features" class="dropdown-toggle nav-link" aria-expanded="true"><span class="fa fa-star"></span>
+                  المميزات
+                </a>
+                </li>
+                <li class="dropdown nav-item dropdown-mega">
+                  <a href="#price" class="dropdown-toggle nav-link" aria-expanded="true"><span class="fa fa-usd"></span>
+                  الأسعار</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-      </nav>
-    </div>
-  </section><!-- End Section Header -->
+      </section><!-- End Section Header -->
   <!-- End Section navbar -->
   <!-- Start Section sidebar -->
   <aside class="saphqa-sidebar">
