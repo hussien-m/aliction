@@ -14,7 +14,7 @@
               <div class="col-md-6 align-self-center order-1 order-md-first">
                 <div class="features pe-5">
                   <h4>{{ $f->title }}</h4>
-                  <p>{{ $f->body }}</p>
+                  <p class="features-content-description">{{ $f->body }}</p>
                 </div>
               </div>
             </div>
