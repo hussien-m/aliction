@@ -22,7 +22,7 @@
             </h4>
               <ul class="list-unstyled mt-3 mb-4">
                 @for($i = 0; $i < count($fets); $i++)
-                <li> {{  $fets[$i] }}</li>
+                <li class="mx-5" style="text-align: justify"> <span class="fa fa-check"></span> {{  $fets[$i] }}</li>
                 @endfor
 
               </ul><button type="button" class="btn btn-lg btn-block btn-outline-primary">سجل الان</button>
