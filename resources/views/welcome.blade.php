@@ -44,7 +44,7 @@
       <nav class="navbar navbar-expand-lg navbar-fixed-top">
         <a href="#" class="nav-link" style="font-size: 25px;" id="btn-bars">
         <span class="fa fa-bars"></span>
-        </a> <a class="navbar-brand" href="/"><img class="logopic" src="{{ asset('images/settings/'.$option->logo) }}"   alt="logofull"></a>
+        </a> <a class="navbar-brand" href="{{ url('/') }}"><img class="logopic" src="{{ asset('images/settings/'.$option->logo) }}"   alt="logofull"></a>
         <div class="d-flex justify-content-between align-items-center w-100">
           <ul class="navbar-nav">
 
