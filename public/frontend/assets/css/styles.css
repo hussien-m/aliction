@@ -2052,3 +2052,6 @@ img, svg {
     font-size: 18px;
     line-height: 32px;
 }
+.features-section .with-image .features {
+     text-align: center;
+}
