@@ -12,7 +12,7 @@
             <div class="row">
               <div class="col-md-6 order-2 mt-md-0 mt-4"><img src="{{ asset('images/features/'.$f->image) }}" loading="lazy" width="100%" alt="chat"></div>
               <div class="col-md-6 align-self-center order-1 order-md-first">
-                <div class="features pe-5">
+                <div class="features">
                   <h4>{{ $f->title }}</h4>
                   <p class="features-content-description">{{ $f->body }}</p>
                 </div>
