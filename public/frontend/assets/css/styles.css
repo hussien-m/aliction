@@ -2008,6 +2008,9 @@ a, a:hover, a:focus {
     .hero-title {
     font-size: 39px;
   }
+    .footer_logo {
+    width: 160px;
+  }
   p .hero-description{
     font-size: 37px;
   }
@@ -2024,7 +2027,9 @@ a, a:hover, a:focus {
     .hero-title {
     font-size: 25px;
   }
-
+  .footer_logo {
+    width: 100px;
+  }
   p .hero-description{
     font-size: 20px;
   }
