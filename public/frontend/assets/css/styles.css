@@ -1887,6 +1887,7 @@ a.submit-button {
 .features h4 {
     line-height: 36px;
     margin-bottom: 22px;
+    text-align: right;
 }
 .features p {
 
