@@ -167,7 +167,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-6 text-start">
                 <img class="footer-brand" src="{{ asset('images/settings/'.$option->logo) }}" loading="lazy" alt="">
-                <p class="footer-description">{{ $option->meta_desc }}</p>
+                <p class="footer-description">{{ $option->site_desc }}</p>
                 <div class="footer-social">
 
                     <a href="{{ $option->twitter }}" target="_blank">
