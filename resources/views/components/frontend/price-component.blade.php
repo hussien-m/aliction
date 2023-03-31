@@ -1,7 +1,7 @@
-<section class="section_search p5" style="background-color:#f9f9f9" id="price">
-    <div class="zt-container main-container mb-5 mt-5">
+<section class="section_search" style="background-color:#f9f9f9" id="price">
+    <div class="zt-container main-container">
       <div class="text-center">
-        <h1 style="color: #2586c8;">{{ $title_section->price_title }}</h1>
+        <h2 style="color: #2586c8;">{{ $title_section->price_title }}</h2>
         <p class="main-block-paragraph">{{ $title_section->price_title2 }}</p></p>
       </div>
       <div class="card-deck mb-3 text-center">

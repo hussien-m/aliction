@@ -1,4 +1,4 @@
-<section class="section_search py-5" style="background-color:#fff">
+<section class="section_search" style="background-color:#fff">
     <div class="zt-container mb-5">
       <div class="block">
         <div class="main-block">
