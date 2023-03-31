@@ -512,7 +512,7 @@ Component: Flex css
 }
 .nav-link:hover{
     color: #fff;
-    background-color: #4399ef;
+    background-color: #2a8fd4;
 }
 .nav-link:hover span {
     color: var(--sub);
