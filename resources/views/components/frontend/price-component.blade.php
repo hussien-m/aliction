@@ -14,10 +14,12 @@
 
             <div class="card mb-4 box-shadow">
             <div class="card-header">
-              <h4 class="my-0 font-weight-normal">{{ $price->name }}</h4>
+              <h5 class="my-0 font-weight-normal">{{ $price->name }}</h5>
             </div>
             <div class="card-body">
-              <h2 class="card-title pricing-card-title"><b>{{ $price->price }}</b></small></h1>
+              <h4 class="card-title pricing-card-title">
+                <b>{{ $price->price }}</b>
+            </h4>
               <ul class="list-unstyled mt-3 mb-4">
                 @for($i = 0; $i < count($fets); $i++)
                 <li> {{  $fets[$i] }}</li>
