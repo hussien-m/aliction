@@ -19,9 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('page/{id}',function($id){
+Route::get('page/{slug}',function($slug){
 
-    $page = Page::findOrFail($id);
+    $page = str_replace('-',' ',$slug);
+    $page = Page::whereTitle($page)->first();
 
     return view('page',compact('page'));
 
