@@ -19,6 +19,7 @@ class SettingController extends Controller
         $settings =  $request->validate([
 
             'site_name'             =>'required',
+            'site_desc'             =>'required',
             'logo'                  =>'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'phone'                 =>'required',
             'facebook'              =>'required',

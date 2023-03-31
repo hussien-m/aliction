@@ -39,6 +39,12 @@
                                 </div>
 
                                 <div class="mb-3">
+                                    <label for="site_desc" class="form-label"> وصف الموقع (خاص بالفوتر)</label>
+                                    <textarea type="text" name="site_desc" id="site_desc" class="form-control"
+                                      cols="6" rows="15" style="resize: none;">{{ $setting[0]->site_desc }}</textarea>
+                                </div>
+
+                                <div class="mb-3">
                                     <label for="logo" class="form-label">شعار الموقع</label>
                                     <input type="file" name="logo" id="logo" class="form-control">
                                     {{ $setting[0]->logo }}
