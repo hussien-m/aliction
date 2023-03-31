@@ -2047,3 +2047,8 @@ a, a:hover, a:focus {
 img, svg {
     vertical-align: middle;
 }
+
+.with-image .features p {
+    font-size: 18px;
+    line-height: 32px;
+}
