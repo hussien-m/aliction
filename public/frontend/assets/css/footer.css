@@ -23,6 +23,9 @@ footer .footer-brand {
 }
 footer .footer-description {
     max-width: 650px;
+    text-align: justify;
+    font-size: 15px;
+    padding-top: 10px;
 }
 footer .footer-menu-title {
     margin-bottom: 20px;
