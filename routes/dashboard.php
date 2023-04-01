@@ -3,6 +3,7 @@
 use App\Http\Controllers\Dashboard\AdminLoginController;
 use App\Http\Controllers\Dashboard\ClientServiceController;
 use App\Http\Controllers\Dashboard\DashboardController;
+use App\Http\Controllers\Dashboard\ExtraController;
 use App\Http\Controllers\Dashboard\FaqController;
 use App\Http\Controllers\Dashboard\FeaturesController;
 use App\Http\Controllers\Dashboard\HeaderController;
@@ -11,6 +12,7 @@ use App\Http\Controllers\Dashboard\PageController;
 use App\Http\Controllers\Dashboard\PriceController;
 use App\Http\Controllers\Dashboard\SectionTitleController;
 use App\Http\Controllers\Dashboard\SettingController;
+use App\Http\Controllers\DashboardExtraController;
 use App\Models\Admin;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
@@ -49,6 +51,7 @@ Route::name('admin.')->prefix('admin')->group(function(){
         Route::resource('price',PriceController::class);
         Route::resource('helpdesk',HelpdeskController::class);
         Route::resource('features',FeaturesController::class);
+        Route::resource('extra',ExtraController::class);
 
         Route::post('save/how',[SectionTitleController::class,'saveHow'])->name('save.how');
         Route::post('save/client',[SectionTitleController::class,'saveClient_title'])->name('save.client');

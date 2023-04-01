@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Page;
+use App\Models\Price;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -31,3 +32,8 @@ Route::get('page/{slug}',function($slug){
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::get('test',function(){
+
+});

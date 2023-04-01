@@ -53,7 +53,20 @@
 
                                 <div class="mb-3">
                                     <label for="features" class="form-label">المميزات</label>
-                                    <input type="text" name="features" id="features" class="form-control" value="{{ $price->features }}">
+                                    @foreach ( $extras as $extra )
+                                        <div><input type="checkbox" name="extra[]" class="checkbox" value="{{ $extra->id }}"
+
+                                        @foreach ( $price->extras as $ext_id )
+                                        @if($ext_id->id == $extra->id)
+                                        checked
+                                        @else
+
+                                        @endif
+                                        @endforeach
+
+
+                                        > {{ $extra->name }}</div>
+                                    @endforeach
                                 </div>
 
                             </div> <!-- end col -->

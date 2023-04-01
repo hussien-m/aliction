@@ -6,11 +6,7 @@
       </div>
       <div class="card-deck mb-3 text-center">
         @foreach ( $prices as $price )
-        @php
 
-            $fets = explode(',',$price->features);
-
-        @endphp
 
             <div class="card mb-4 box-shadow">
             <div class="card-header">
@@ -22,9 +18,27 @@
             </h4>
             <hr>
               <ul class="list-unstyled mt-3 mb-4">
-                @for($i = 0; $i < count($fets); $i++)
-                <li class="mx-5" style="text-align: justify"> <span class="fa fa-check"></span> {{  $fets[$i] }}</li>
-                @endfor
+
+                @foreach ( $extras as $extra )
+
+                        <li class="mx-5" style="text-align: justify"> <span class="
+
+
+                            @foreach ( $price->extras as $ext_id )
+                            @if($ext_id->id == $extra->id)
+                            fa fa-check
+                            @else
+                            fa fa-times
+                            @endif
+                            @endforeach
+
+
+                            ">
+                        </span> {{  $extra->name }}</li>
+
+                @endforeach
+
+
 
               </ul><button type="button" class="btn btn-lg btn-block btn-outline-primary">سجل الان</button>
             </div>

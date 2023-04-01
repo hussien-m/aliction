@@ -5,14 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Price extends Model
+class Extra extends Model
 {
     use HasFactory;
 
-    protected $guarded=[];
+    protected $guarded = [];
 
-    public function extras()
+    public function prices()
     {
-        return $this->belongsToMany(Extra::class,'extra_price');
+        return $this->belongsToMany(Price::class,'extra_price');
     }
 }

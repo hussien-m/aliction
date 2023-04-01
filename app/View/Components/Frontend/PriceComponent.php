@@ -2,7 +2,9 @@
 
 namespace App\View\Components\Frontend;
 
+use App\Models\Extra;
 use App\Models\Price;
+use Illuminate\Support\Facades\DB;
 use Illuminate\View\Component;
 
 class PriceComponent extends Component
@@ -14,9 +16,17 @@ class PriceComponent extends Component
      */
 
      public $prices;
+     public $extras;
+
     public function __construct()
     {
         $this->prices = Price::get();
+        $this->extras = Extra::get();
+
+
+
+
+
     }
 
     /**
@@ -26,6 +36,14 @@ class PriceComponent extends Component
      */
     public function render()
     {
-        return view('components.frontend.price-component');
+        $extra_ids = array();
+        $extras_price = DB::table('extra_price')->select('price_id')->get();
+        foreach($extras_price as $ep){
+            array_push($extra_ids,$ep->price_id);
+
+        }
+
+
+        return view('components.frontend.price-component',compact('extra_ids'));
     }
 }

@@ -71,71 +71,30 @@
   <!-- Start Section sidebar -->
   <aside class="saphqa-sidebar">
     <div class="saphqa-sidebar-wrapper">
-      <ul class="saphqa-sidebar-menu">
-        <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-          <a class="saphqa-sidebar-menu-item-link" href="#helpdesks">لوحة التحكم</a>
-        </li>
-        <li class="saphqa-sidebar-menu-item">
-          <a class="saphqa-sidebar-menu-item-link">المميزات</a>
-          <ul class="saphqa-sidebar-menu">
-            <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="#chat">الدردشة المباشرة</a>
+        <ul class="list-unstyled components p-3 mt-3">
+            <li class="mt-2 mb-3">
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="toggle-submenu">
+                <i class="fa fa-home"></i>
+                الصفحة الرئيسية
+                <i class="fas fa-angle-left"></i>
+              </a>
+              <ul class="collapse list-unstyled mr-3" id="homeSubmenu">
+                <li class="mt-2"><a href="#">المنتجات</a></li>
+                <li class="mt-2" ><a href="#">الخدمات</a></li>
+                <li class="mt-2"><a href="#">المقالات</a></li>
+              </ul>
             </li>
-            <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="#conversations">إدارة المحادثات</a>
+            <li class="mb-3">
+              <a href="#">
+                <i class="fa fa-briefcase"></i> الخدمات
+              </a>
             </li>
-            <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="#knowledgebase">قاعدة المعرفة</a>
-            </li>
-            <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="#shared-inbox">صناديق البريد</a>
-            </li>
-            <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="#permissions">الصلاحيات</a>
-            </li>
-            <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="#brand">تخصيص النطاق والهوية</a>
-            </li>
-            <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="#statistics">الإحصائيات والتقارير</a>
-            </li>
-            <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="#webhooks">الخطافات</a>
+            <li>
+              <a href="#">
+                <i class="fa fa-newspaper"></i> المقالات
+              </a>
             </li>
           </ul>
-        </li>
-        <li class="saphqa-sidebar-menu-item">
-          <a class="saphqa-sidebar-menu-item-link" href="https://zaetoon.com#price">الأسعار</a>
-        </li>
-        <li class="saphqa-sidebar-menu-item">
-          <a class="saphqa-sidebar-menu-item-link">أليكشن</a>
-          <ul class="saphqa-sidebar-menu">
-            <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="#about">عن أليكشن</a>
-            </li>
-            <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="#terms">شروط الاستخدام</a>
-            </li>
-            <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="#privacy">بيان الخصوصية</a>
-            </li>
-            <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="#redirect/helpdesk" target="_blank">مركز المساعدة</a>
-            </li>
-          </ul>
-        </li>
-        <li class="saphqa-sidebar-menu-item">
-          <a class="saphqa-sidebar-menu-item-link">تابعنا</a>
-          <ul class="saphqa-sidebar-menu">
-            <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="https://blog.zaetoon.com" target="_blank">مدونة أليكشن</a>
-            </li>
-            <li class="saphqa-sidebar-menu-item hsoub--visible-v hsoub-desktop hsoub-tablet hsoub-mobile">
-              <a class="saphqa-sidebar-menu-item-link" href="https://twitter.com/zaetooncom" target="_blank">تويتر</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
     </div>
   </aside><!-- End Section sidebar -->
   <!-- Section Our Services  -->
@@ -208,6 +167,13 @@
                  });
              });
          });
+
+
+         $(document).ready(function() {
+            $('.toggle-submenu').click(function() {
+                $(this).find('.fas').toggleClass('fas fa-angle-left fas fa-angle-down');
+            });
+        });
 
   </script><!-- end Section Footer -->
 </body>

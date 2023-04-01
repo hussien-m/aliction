@@ -3,8 +3,11 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\Models\Extra;
 use App\Models\Price;
+use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PriceController extends Controller
 {
@@ -20,21 +23,22 @@ class PriceController extends Controller
     public function create()
     {
         $data['pricename'] = 'الاسعار اضافة';
+        $data['extras'] = Extra::get();
         return view('dashboard.price.create',$data);
     }
 
     public function store(Request $request)
     {
+
         $data = $request->validate([
             'name' => 'required',
             'price' => 'required',
-            'features' => 'required',
         ]);
 
+        dd($request->all());
         Price::create([
             'name' => $request->name,
             'price' => $request->price,
-            'features' => $request->features,
         ]);
         toast('تم الحفظ بنجاح','success');
         return redirect()->route("admin.price.index");
@@ -51,6 +55,9 @@ class PriceController extends Controller
     public function edit($id)
     {
         $data['price'] = Price::findOrFail($id);
+        $data['extras'] = Extra::get();
+        $data['price']->load('extras');
+        //dd([$data['price']]);
         $data['pagename'] = 'الاسعار تعديل';
         return view('dashboard.price.edit',$data);
     }
@@ -58,14 +65,26 @@ class PriceController extends Controller
 
     public function update(Request $request, $id)
     {
-        $price = Price::findOrFail($id);
-        $price->name = $request->name;
-        $price->price = $request->price;
-        $price->features = $request->features;
+        //dd(count($request->extra));
+        DB::beginTransaction();
+        try{
 
-        $price->save();
-        toast('تم الحفظ بنجاح','success');
-        return redirect()->route("admin.price.index");
+            $price = Price::findOrFail($id);
+            $price->name = $request->name;
+            $price->price = $request->price;
+            $price->save();
+
+            $price->extras()->sync($request->extra);
+           DB::commit();
+            toast('تم الحفظ بنجاح','success');
+            return redirect()->route("admin.price.index");
+
+        } catch (Exception $ex){
+            DB::rollBack();
+            toast($ex->getMessage(),'warning');
+            return redirect()->route("admin.price.index");
+        }
+
     }
 
 
