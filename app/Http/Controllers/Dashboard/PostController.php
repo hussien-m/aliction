@@ -46,7 +46,6 @@ class PostController extends Controller
 
             Post::create([
                 'title' => $request->title,
-                'image' => $request->image,
                 'body'  => $request->body,
                 'category_id'  => $request->category_id,
                 'slug'  => str_replace(' ', '-', $request->title),

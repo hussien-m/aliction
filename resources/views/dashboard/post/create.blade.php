@@ -25,7 +25,7 @@
 @endsection
 @section('content')
 
-    <form action="{{ route('admin.page.store') }}" method="post" enctype="multipart/form-data">
+    <form action="{{ route('admin.post.store') }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="row">
             <div class="col-lg-12">
@@ -61,7 +61,7 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="content" class="form-label">محتوى المقال</label>
+                                    <label for="body" class="form-label">محتوى المقال</label>
                                     <textarea cols="10" rows="10" type="text" name="body" id="content" class="form-control"></textarea>
                                 </div>
 
