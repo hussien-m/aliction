@@ -39,14 +39,30 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="mb-3">
-                                    <label for="title" class="form-label">العنوان</label>
+                                    <label for="image" class="form-label"> صورة المقال</label>
+                                    <input type="file" name="image" id="image" class="form-control"
+                                        value="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="title" class="form-label">عنوان المقال</label>
                                     <input type="text" name="title" id="title" class="form-control"
                                         value="">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="content" class="form-label">المحتوى</label>
-                                    <textarea cols="10" rows="10" type="text" name="content" id="content" class="form-control"></textarea>
+                                    <label for="category_id" class="form-label">تصنيف المقال</label>
+                                    <select class="form-control" name="category_id">
+                                        <option disabled selected>-- اختر التصنيف --</option>
+                                        @foreach ($categories as $cat )
+                                                <option value="{{ $cat->id }}">{{ $cat->name }}</option>
+                                        @endforeach
+                                    </select>
+
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="content" class="form-label">محتوى المقال</label>
+                                    <textarea cols="10" rows="10" type="text" name="body" id="content" class="form-control"></textarea>
                                 </div>
 
                             </div> <!-- end col -->
@@ -64,33 +80,24 @@
 @stop
 
 @section('scripts')
-
-<script src="{{ asset('dashboard/assets/libs/selectize/js/standalone/selectize.min.js') }}"></script>
-<script src="{{ asset('dashboard/assets/libs/mohithg-switchery/switchery.min.js') }}"></script>
-<script src="{{ asset('dashboard/assets/libs/multiselect/js/jquery.multi-select.js') }}"></script>
-<script src="{{ asset('dashboard/assets/libs/select2/js/select2.min.js') }}"></script>
-<script src="{{ asset('dashboard/assets/libs/jquery-mockjax/jquery.mockjax.min.js') }}"></script>
-<script src="{{ asset('dashboard/assets/libs/devbridge-autocomplete/jquery.autocomplete.min.js') }}"></script>
-<script src="{{ asset('dashboard/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js') }}"></script>
-<script src="{{ asset('dashboard/assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js') }}"></script>
-<script src="{{ asset('dashboard/assets/js/pages/form-advanced.init.js') }}"></script>
-<script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.js"></script>
-
+<script src="https://cdn.ckeditor.com/ckeditor5/31.0.0/classic/ckeditor.js"></script>
 <script>
-    $("#datatable").DataTable(), $("#datatable-buttons").DataTable({
-
-        style:{'fontSize':200, 'font-family':'sans-serif'},
-
-    });
-</script>
-<script>
-ClassicEditor
-    .create( document.querySelector( '#content' ), {
-        language: 'ar',
-        contentLanguageDirection: 'rtl' // يتم تعيين الاتجاه الى اليمين-الى-اليسار
-    } )
-    .catch( error => {
-        console.error( error );
-    } );
+    ClassicEditor
+        .create( document.querySelector( '#content' ), {
+            ckfinder: {
+                language: 'ar',
+                contentLanguageDirection: 'rtl',
+                uploadUrl: '{{ route('admin.ckeditor.image-upload', ['_token' => csrf_token()]) }}',
+                options: {
+                    resourceType: 'Images',
+                    disallowedExtensions: ['php','html','js','exe','bat','sh','py','pl','cgi','jar','app','com','scr','pif','vb','vbs','reg','msi','msp','aspx','ascx','asmx','asax','cs','config','ini','htaccess','htpasswd','log','txt','zip','rar','tar','gz','gzip','csv'],
+                }
+            },
+            language: 'ar',
+            licenseKey: '',
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
 </script>
 @endsection

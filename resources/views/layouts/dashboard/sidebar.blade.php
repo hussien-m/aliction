@@ -48,8 +48,8 @@
                                     <span>المدونة</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="#"><i class="dripicons-list"></i> التصنيفات </a></li>
-                                    <li><a href="#"><i class="dripicons-graph-bar"></i> المواضيع </a></li>
+                                    <li><a href="{{ route('admin.category.index') }}"><i class="dripicons-list"></i> التصنيفات </a></li>
+                                    <li><a href="{{ route('admin.post.index') }}"><i class="dripicons-graph-bar"></i> المواضيع </a></li>
 
                                 </ul>
                             </li>

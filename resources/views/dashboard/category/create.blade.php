@@ -7,7 +7,6 @@
 <link href="{{asset('dashboard/assets/libs/select2/css/select2.min.css')}}" rel="stylesheet" type="text/css" />
 <link href="{{asset('dashboard/assets/libs/selectize/css/selectize.bootstrap3.css')}}" rel="stylesheet" type="text/css" />
 <link href="{{asset('dashboard/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css')}}" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.css">
 <style>
     .dt-button{
         font-family: 'carro', sans-serif;;
@@ -15,23 +14,17 @@
     .dt-button-collection{
         font-family: 'arial', sans-serif;;
     }
-
-    .ck.ck-editor__editable_inline>:last-child {
-    margin-bottom: var(--ck-spacing-large);
-    text-align: right;
-    height: 300px;
-}
 </style>
 @endsection
 @section('content')
 
-    <form action="{{ route('admin.page.store') }}" method="post" enctype="multipart/form-data">
+    <form action="{{ route('admin.category.store') }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="header-title">اضافة الصفحات</h4>
+                        <h4 class="header-title">اعدادات  تصنيفات المدونة</h4>
                         @if ($errors->any())
                             {!! implode('', $errors->all('<div>:message</div>')) !!}
                         @endif
@@ -39,14 +32,9 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="mb-3">
-                                    <label for="title" class="form-label">العنوان</label>
-                                    <input type="text" name="title" id="title" class="form-control"
+                                    <label for="name" class="form-label">اسم التصنيف</label>
+                                    <input type="text" name="name" id="name" class="form-control"
                                         value="">
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="content" class="form-label">المحتوى</label>
-                                    <textarea cols="10" rows="10" type="text" name="content" id="content" class="form-control"></textarea>
                                 </div>
 
                             </div> <!-- end col -->
@@ -74,7 +62,6 @@
 <script src="{{ asset('dashboard/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js') }}"></script>
 <script src="{{ asset('dashboard/assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js') }}"></script>
 <script src="{{ asset('dashboard/assets/js/pages/form-advanced.init.js') }}"></script>
-<script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.js"></script>
 
 <script>
     $("#datatable").DataTable(), $("#datatable-buttons").DataTable({
@@ -83,14 +70,5 @@
 
     });
 </script>
-<script>
-ClassicEditor
-    .create( document.querySelector( '#content' ), {
-        language: 'ar',
-        contentLanguageDirection: 'rtl' // يتم تعيين الاتجاه الى اليمين-الى-اليسار
-    } )
-    .catch( error => {
-        console.error( error );
-    } );
-</script>
+
 @endsection
