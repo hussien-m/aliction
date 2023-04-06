@@ -120,6 +120,7 @@
 
 
   <x-frontend.faq-component/>
+  <x-frontend.say-component/>
 
 <footer>
     <div class="container main-container pt-5 pb-3">

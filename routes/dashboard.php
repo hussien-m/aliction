@@ -10,6 +10,7 @@ use App\Http\Controllers\Dashboard\HeaderController;
 use App\Http\Controllers\Dashboard\HelpdeskController;
 use App\Http\Controllers\Dashboard\PageController;
 use App\Http\Controllers\Dashboard\PriceController;
+use App\Http\Controllers\Dashboard\SayController;
 use App\Http\Controllers\Dashboard\SectionTitleController;
 use App\Http\Controllers\Dashboard\SettingController;
 use App\Http\Controllers\DashboardExtraController;
@@ -52,6 +53,7 @@ Route::name('admin.')->prefix('admin')->group(function(){
         Route::resource('helpdesk',HelpdeskController::class);
         Route::resource('features',FeaturesController::class);
         Route::resource('extra',ExtraController::class);
+        Route::resource('say',SayController::class);
 
         Route::post('save/how',[SectionTitleController::class,'saveHow'])->name('save.how');
         Route::post('save/client',[SectionTitleController::class,'saveClient_title'])->name('save.client');

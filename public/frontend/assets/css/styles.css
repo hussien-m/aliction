@@ -2038,6 +2038,10 @@ a, a:hover, a:focus {
   .logopic  {
     width: 121px;
   }
+
+    .saphqa-sidebar {
+        top: 61px;
+  }
 }
 
 
@@ -2056,4 +2060,29 @@ img, svg {
 }
 .features-section .with-image .features {
      text-align: center;
+}
+.testimonials {
+    align-items: flex-start;
+    display: flex;
+}
+.testimonials .testimonials-image {
+    -webkit-margin-end: 15px;
+    margin-inline-end: 15px;
+}
+.testimonials .testimonials-image img {
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 50%;
+    width: 80px;
+}
+.testimonials.with-button .testimonials-content {
+    margin-top: 17px;
+}
+.testimonials .testimonials-content h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.testimonials .testimonials-content h5 {
+    color: #787878;
+    font-size: 14px;
+    margin-bottom: 0;
 }

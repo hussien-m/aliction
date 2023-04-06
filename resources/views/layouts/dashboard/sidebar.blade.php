@@ -37,6 +37,7 @@
                                     <li><a href="{{ route("admin.price.index") }}"><i class="dripicons-vibrate"></i>الاسعار</a></li>
                                     <li><a href="{{ route("admin.extra.index") }}"><i class="dripicons-vibrate"></i>مميزات الخطط</a></li>
                                     <li><a href="{{ route("admin.features.index") }}"><i class="dripicons-star"></i>المميزات</a></li>
+                                    <li><a href="{{ route("admin.say.index") }}"><i class="dripicons-star"></i>أقوال العملاء</a></li>
                                     <li><a href="{{ route("admin.page.index") }}"><i class="dripicons-document"></i>الصفحات</a></li>
                                 </ul>
                             </li>
