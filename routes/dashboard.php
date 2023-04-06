@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Dashboard\AccountController;
 use App\Http\Controllers\Dashboard\AdminLoginController;
 use App\Http\Controllers\Dashboard\CategoryController;
 use App\Http\Controllers\Dashboard\ClientServiceController;
@@ -47,7 +48,8 @@ Route::name('admin.')->prefix('admin')->group(function(){
         Route::post('/logout',[AdminLoginController::class,'destroy'])->name('logout');
         Route::get('home/setting',[SettingController::class,'index'])->name('settings');
         Route::put('home/setting/update',[SettingController::class,'update'])->name('setting.update');
-
+        Route::get('/home/my-account', [AccountController::class, 'index'])->name('my-account');
+        Route::put('/home/my-account-update', [AccountController::class, 'update'])->name('update-my-account');
         Route::resource('header',HeaderController::class);
         Route::resource('client-service',ClientServiceController::class);
         Route::resource('faq',FaqController::class);

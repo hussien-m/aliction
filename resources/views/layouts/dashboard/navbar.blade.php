@@ -46,9 +46,8 @@
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- item-->
                                 <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle font-size-17 align-middle me-1"></i>{{ Auth::user()->name }}</a>
-                                <a class="dropdown-item" href="#"><i class="mdi mdi-wallet font-size-17 align-middle me-1"></i> My Wallet</a>
-                                <a class="dropdown-item d-flex align-items-center" href="#"><i class="mdi mdi-cog font-size-17 align-middle me-1"></i> Settings<span class="badge bg-success ms-auto">11</span></a>
-                                <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline font-size-17 align-middle me-1"></i> Lock screen</a>
+                                <a class="dropdown-item d-flex align-items-center" href="{{ route('admin.settings') }}"><i class="mdi mdi-cog font-size-17 align-middle me-1"></i> الاعدادات</a>
+                                <a class="dropdown-item" href="{{ route('admin.my-account') }}"><i class="mdi mdi-lock-open-outline font-size-17 align-middle me-1"></i> حسابي</a>
                                 <div class="dropdown-divider"></div>
                                 <a href="javascript:void(0);" class="dropdown-item notify-item" href="{{ route('admin.logout') }}"
                                 onclick="event.preventDefault();
