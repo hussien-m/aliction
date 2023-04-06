@@ -16,7 +16,7 @@ class SayComponent extends Component
     public $says;
     public function __construct()
     {
-        $this->says = Say::latest()->paginate(2);
+        $this->says = Say::latest()->paginate(10);
     }
 
     /**
