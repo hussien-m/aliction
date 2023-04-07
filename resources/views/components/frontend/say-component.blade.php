@@ -5,7 +5,7 @@
         </div>
         <div class="row">
             @foreach ($says as $say)
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="testimonials with-button">
                         <div class="testimonials-image">
                             <img src="{{ asset("images/say/".$say->image) }}" loading="lazy" alt="">
