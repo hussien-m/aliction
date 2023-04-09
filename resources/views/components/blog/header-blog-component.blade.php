@@ -1,4 +1,20 @@
 @foreach ( $posts as $post )
+@php
+    $words = htmlspecialchars_decode(strip_tags($post->body));
+    $text = $words;
+
+// إزالة الوسوم HTML من النص
+$text = strip_tags($text);
+
+// تحويل النص إلى مصفوفة من الكلمات
+$words = explode(" ", $text);
+
+// الحصول على الـ 30 كلمة الأولى
+$first_30_words = array_slice($words, 0, 30);
+
+// دمج الكلمات في نص واحد
+$shortened_text = implode(" ", $first_30_words);
+@endphp
 <div class="col-lg-6">
 
     <div class="home_article home_article2">
@@ -16,7 +32,7 @@
             <div class="clearfix"></div>
             <a class="article_title mt-3 d-block"
                 href="#cat">{{ $post->category->name }}: {{ $post->title }}</a>
-            <p class="post_excerpt">{!! substr( htmlspecialchars_decode(strip_tags($post->body)),-250)  !!}</p>
+            <p class="post_excerpt">{!! $shortened_text  !!}</p>
         </div>
     </div>
 </div>
