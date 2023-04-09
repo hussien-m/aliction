@@ -110,13 +110,7 @@
             <div class="clearfix"></div>
             <!-- pagination -->
 
-            <nav class="navigation pagination" aria-label=" ">
-                <h2 class="screen-reader-text"> </h2>
-                <div class="nav-links"><span aria-current="page" class="page-numbers current">1</span>
-                    <a class="page-numbers" href="https://blog.zaetoon.com/page/2/">2</a>
-                    <a class="next page-numbers" href="https://blog.zaetoon.com/page/2/">التالي</a>
-                </div>
-            </nav>
+
 
 
 
@@ -125,9 +119,6 @@
     </section>
 
 
-    <script type='text/javascript'
-        src='https://blog.zaetoon.com/wp-content/themes/mostaqlvip-mostaql_blog_wordpress-aa22a295d1ce/js/slider.front.js?ver=1.1'
-        id='my_amazing_script-js'></script>
 
 
 
