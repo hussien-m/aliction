@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogControlller;
 use App\Models\Page;
 use App\Models\Price;
 use Illuminate\Support\Facades\Auth;
@@ -34,6 +35,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-Route::get('test',function(){
-
-});
+Route::get('/blog',[BlogControlller::class,'index'])->name('blog');
