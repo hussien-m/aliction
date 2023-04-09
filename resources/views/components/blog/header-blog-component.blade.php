@@ -32,7 +32,7 @@ $shortened_text = implode(" ", $first_30_words);
             <div class="clearfix"></div>
             <a class="article_title mt-3 d-block"
                 href="#cat">{{ $post->category->name }}: {{ $post->title }}</a>
-            <p class="post_excerpt">{!! $shortened_text  !!}</p>
+            <p class="post_excerpt">{!! $shortened_text.'....'  !!}</p>
         </div>
     </div>
 </div>
