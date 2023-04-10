@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class PostController extends Controller
 {
@@ -41,7 +42,7 @@ class PostController extends Controller
             $path = $request->file('image')
                 ->move(public_path("images/post"), $imageName);
             $request->image = $imageName;
-            //$features->image = $imageName;
+            //$post->image = $imageName;
 
 
             Post::create([
@@ -61,6 +62,7 @@ class PostController extends Controller
 
     public function show($id)
     {
+
     }
 
 
@@ -75,6 +77,32 @@ class PostController extends Controller
 
     public function update(Request $request, $id)
     {
+        $post = Post::findOrFail($id);
+        $image = public_path('images' . DIRECTORY_SEPARATOR . 'post' . DIRECTORY_SEPARATOR . $post->image);
+
+        if ($request->hasFile('image')) {
+
+            if (File::exists($image)) {
+                File::delete($image);
+            }
+
+            $imagePath = $request->file('image');
+            $imageName = time() . '-' . $request->name . '.' . $request->file("image")->extension();
+            $path = $request->file('image')
+                ->move(public_path("images/post"), $imageName);
+            $request->image = $imageName;
+            $post->image = $imageName;
+        }
+
+        $post->title = $request->title;
+        $post->body = $request->body;
+        $post->slug = str_replace(' ', '-', $request->title);
+        $post->category_id  = $request->category_id;
+        $post->status = 'active';
+        $post->save();
+
+        toast('تم الحفظ بنجاح','success');;
+        return redirect()->route("admin.post.index");
     }
 
 
