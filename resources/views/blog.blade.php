@@ -111,6 +111,8 @@
     </section>
     @endif
 
+    @yield('content')
+
 
 
 

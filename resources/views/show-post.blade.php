@@ -7,10 +7,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="home_article1">
-                    <!--<div class="articleimg" style="background: url('') center / cover;"></div>-->
+
                     <div class="article_desc">
                         <div class="article_meta">
-                            <a class="meta_tag" href="#cat">{{ $post->category->name }}</a>
+                            <a class="meta_tag" href="#cat"></a>
                             <p class="article_date">
                                 آخر تحديث {{ \Carbon\Carbon::parse($post->created_at)->locale('ar')->isoFormat('D MMMM Y') }} </p>
 
@@ -24,13 +24,15 @@
             </div>
 
         </div>
+
+
         <div class="related_section my-3">
             <h4 class="cat_title text-right mb-4">مقالات ذات صلة</h4>
             <div class="row">
 
-                @foreach ( $postsCategory as  $post )
+                @foreach ( $postsCategory as  $post2 )
                 @php
-                    $words = htmlspecialchars_decode(strip_tags($post->body));
+                    $words = htmlspecialchars_decode(strip_tags($post2->body));
                     $text = $words;
 
                 // إزالة الوسوم HTML من النص
@@ -47,7 +49,7 @@
                 @endphp
                 <div class="col-lg-4">
                     <div class="home_article">
-                        <a href="{{ route('post.show',$post->slug) }}">
+                        <a href="{{ route('post.show',$post2->slug) }}">
                             <div class="articleimg"
                                 style="background: url('{{ asset('images/post/'.$post->image) }}') center / cover;">
                             </div>
@@ -55,12 +57,12 @@
                         </a>
                         <div class="article_desc">
                             <div class="article_meta">
-                                <a class="meta_tag" href="#cat">{{ $post->category->name }}
+                                <a class="meta_tag" href="#cat">{{ $post2->category->name }}
                                     </a>
                             </div>
                             <div class="clearfix"></div>
                             <a class="article_title mt-3 d-block"
-                                href="{{ route('post.show',$post->slug) }}">{{ $post->category->name }}: {{ $post->title }}</a>
+                                href="{{ route('post.show',$post->slug) }}">{{ $post2->category->name }}: {{ $post2->title }}</a>
                                 <p class="post_excerpt">{!! $shortened_text.'....' !!}</p>
                         </div>
                     </div>
