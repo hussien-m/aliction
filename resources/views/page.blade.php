@@ -35,7 +35,7 @@
          font-family: 'Noto Naskh Arabic', serif;
          font-size: 16px;
          }
-         h3{
+         .section_search h3 {
             color: #2586c8 !important;
          }
   </style>
