@@ -47,7 +47,7 @@
     <section class="top-header" id="myHeader">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light px-0 mx-0">
-                <a class="navbar-brand px-0 mx-0" href="https://blog.zaetoon.com"><img class="img-fluid"
+                <a class="navbar-brand px-0 mx-0" href="{{ url('/blog') }}"><img class="img-fluid"
                         src="{{ asset('images/settings/'.$option->logo) }}"> </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MostaqlMenu"
                     aria-controls="MostaqlMenu" aria-expanded="false" aria-label="Toggle navigation">
