@@ -36,7 +36,7 @@
          font-size: 16px;
          }
          h3{
-            color: #2586c8;
+            color: #2586c8 !important;
          }
   </style>
 </head><!-- End Head -->
