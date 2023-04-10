@@ -26,7 +26,7 @@ $shortened_text = implode(" ", $first_30_words);
         </a>
         <div class="article_desc">
             <div class="article_meta">
-                <a class="meta_tag" href="#cat">{{ $post->category->name }}
+                <a class="meta_tag" href="{{route('category-blog.show',$post->category->slug) }}">{{ $post->category->name }}
                     </a>
             </div>
             <div class="clearfix"></div>
