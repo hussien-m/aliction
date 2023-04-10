@@ -35,6 +35,9 @@
          font-family: 'Noto Naskh Arabic', serif;
          font-size: 16px;
          }
+         h3{
+            color: #2586c8;
+         }
   </style>
 </head><!-- End Head -->
 <!-- Section navbar -->
