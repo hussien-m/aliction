@@ -43,4 +43,4 @@
 
 </div>
 <div class="clearfix"></div>
-<div>{{ $posts->links() }}</div>
+<div>{!! $posts->links() !!}</div>
