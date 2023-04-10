@@ -43,4 +43,4 @@
 
 </div>
 <div class="clearfix"></div>
-{{ $posts->links() }}
+<div class="text-center">{{ $posts->links() }}</div>
