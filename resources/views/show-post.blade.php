@@ -40,7 +40,7 @@
                 $words = explode(" ", $text);
 
                 // الحصول على الـ 30 كلمة الأولى
-                $first_30_words = array_slice($words, 0, 30);
+                $first_30_words = array_slice($words, 0, 15);
 
                 // دمج الكلمات في نص واحد
                 $shortened_text = implode(" ", $first_30_words);
