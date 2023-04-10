@@ -43,4 +43,4 @@
 
 </div>
 <div class="clearfix"></div>
-<div class="navigation pagination aria-label=" ">{{ $posts->links() }}</div>
+{{ $posts->links() }}
