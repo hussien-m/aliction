@@ -76,7 +76,7 @@
                         </a>
                         <div class="article_desc">
                             <div class="article_meta">
-                                <a class="meta_tag" href="#cat">{{ $post2->category->name }}
+                                <a class="meta_tag" href="{{ route('category-blog.show',$post2->category->slug) }}">{{ $post2->category->name }}
                                     </a>
                             </div>
                             <div class="clearfix"></div>
