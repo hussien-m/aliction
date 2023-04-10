@@ -17,7 +17,26 @@
                         </div>
                         <div class="clearfix"></div>
                         <h1 class="article_title">{{ $post->title }}</h1>
-                        <section class="post-content">{!! $post->body !!}</section>
+                        <section class="post-content">
+
+                                <p>
+                                    <img
+                                    decoding="async"
+                                    class="aligncenter wp-image-433 size-full"
+                                    src="{{ asset('images/post/'.$post->image) }}"
+                                    alt="دليل عملي لتقديم خدمة عملاء احترافية لشركتك الناشئة"
+                                    width="1200"
+                                    height="675"
+                                    srcset="{{ asset('images/post/'.$post->image) }} 1200w,
+                                             {{ asset('images/post/'.$post->image) }} 300w,
+                                             {{ asset('images/post/'.$post->image) }} 1024w,
+                                             {{ asset('images/post/'.$post->image) }} 768w"
+                                    sizes="(max-width: 1200px) 100vw, 1200px"
+                                >
+                                </p>
+
+                            {!! $post->body !!}
+                        </section>
 
                     </div>
                 </div>
