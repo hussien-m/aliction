@@ -36,3 +36,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::get('/blog',[BlogControlller::class,'index'])->name('blog');
+Route::get('/blog/post/{slug}',[BlogControlller::class,'show'])->name('post.show');

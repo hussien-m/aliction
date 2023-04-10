@@ -91,6 +91,8 @@
         </div>
     </section>
 
+
+    @if(Request::is('blog'))
     <section class="body-content">
         <div class="container">
             <div class="row">
@@ -117,7 +119,9 @@
         </div>
 
     </section>
+    @endif
 
+    @yield('content')
 
 
 

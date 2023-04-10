@@ -17,7 +17,7 @@ $shortened_text = implode(" ", $first_30_words);
 @endphp
 <div class="col-lg-4">
     <div class="home_article">
-        <a href="#cate">
+        <a href="{{ route('post.show',$post->slug) }}">
             <div class="articleimg"
                 style="background: url('{{ asset('images/post/'.$post->image) }}') center / cover;">
             </div>
@@ -30,7 +30,7 @@ $shortened_text = implode(" ", $first_30_words);
             </div>
             <div class="clearfix"></div>
             <a class="article_title mt-3 d-block"
-                href="#cat">{{ $post->category->name }}: {{ $post->title }}</a>
+                href="{{ route('post.show',$post->slug) }}">{{ $post->category->name }}: {{ $post->title }}</a>
                 <p class="post_excerpt">{!! $shortened_text.'....' !!}</p>
         </div>
     </div>
