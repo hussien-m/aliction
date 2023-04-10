@@ -102,26 +102,14 @@
 
             </div>
             <p class="cat_title">أحدث المقالات</p>
-            <div class="row" style="padding-bottom: 30px">
+            <x-blog.body-blog-component/>
 
-
-                <x-blog.body-blog-component/>
-
-            </div>
-
-            <div class="clearfix"></div>
             <!-- pagination -->
-
-
-
-
 
         </div>
 
     </section>
     @endif
-
-    @yield('content')
 
 
 
