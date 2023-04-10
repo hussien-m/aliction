@@ -68,34 +68,8 @@
       </section><!-- End Section Header -->
   <!-- End Section navbar -->
   <!-- Start Section sidebar -->
-  <aside class="saphqa-sidebar">
-    <div class="saphqa-sidebar-wrapper">
-        <ul class="list-unstyled components p-3 mt-3">
-            <li class="mt-2 mb-3">
-              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="toggle-submenu">
-                <i class="fa fa-home"></i>
-                الصفحة الرئيسية
-                <i class="fas fa-angle-left"></i>
-              </a>
-              <ul class="collapse list-unstyled mr-3" id="homeSubmenu">
-                <li class="mt-2"><a href="#">المنتجات</a></li>
-                <li class="mt-2" ><a href="#">الخدمات</a></li>
-                <li class="mt-2"><a href="#">المقالات</a></li>
-              </ul>
-            </li>
-            <li class="mb-3">
-              <a href="#">
-                <i class="fa fa-briefcase"></i> الخدمات
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-newspaper"></i> المقالات
-              </a>
-            </li>
-          </ul>
-    </div>
-  </aside>
+
+  <x-frontend.aside-component/>
 
 
 
