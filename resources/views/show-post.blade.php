@@ -10,7 +10,7 @@
 
                     <div class="article_desc">
                         <div class="article_meta">
-                            <a class="meta_tag" href="#cat"></a>
+                            <a class="meta_tag" href="#cat">{{ $post->category->name }}</a>
                             <p class="article_date">
                                 آخر تحديث {{ \Carbon\Carbon::parse($post->created_at)->locale('ar')->isoFormat('D MMMM Y') }} </p>
 
