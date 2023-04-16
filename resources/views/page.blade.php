@@ -7,7 +7,7 @@
   <meta name="keywords" content="{{ $option->meta_tag }}">
   <meta name="author" content="{{ $option->site_name }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ $option->site_name }}</title>
+  <title>{{ $option->site_name }} | {{ $page->title }}</title>
   <link rel="stylesheet" href="{{ asset('frontend/assets/plugins/bootstrap/css/bootstrap.min.css') }}">
   <link rel="stylesheet" href="{{ asset('frontend/assets/plugins/bootstrap/css/bootstrap-rtl.min.css') }}">
   <link rel="shortcut icon" href="{{ asset('frontend/assets/images/favicon.png') }}">

@@ -10,7 +10,7 @@
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
     <!-- This site is optimized with the Yoast SEO plugin v20.4 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>مدونة أليكشن - نصائح عملية لتقديم أفضل خدمة عملاء</title>
+    <title>مدونة أليكشن - {{ $post->title ?? $category->name ?? " " }}</title>
     <meta property="og:locale" content="ar_AR" />
     <!-- / Yoast SEO plugin. -->
 
@@ -65,7 +65,7 @@
                     <div class="header_social ">
                         <form class="social_h_icon search_frm" action="#">
                             <input name="s" class="search_input" placeholder="بحث..." type="text">
-                            <div class="hideback1"></div>
+                            
 
                         </form>
                     </div>

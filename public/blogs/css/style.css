@@ -250,7 +250,7 @@ h6{
     width: 25px;
     box-sizing: border-box;
     font-size: 16px;
-    background-color: white;
+    background-color: #2285c7;
     background-image: url('../../search.svg');
     background-position: 0px 0px;
     background-repeat: no-repeat;
@@ -262,7 +262,9 @@ h6{
     margin-left: 10px;
 
 }
-
+.search_input:focus {
+    background-color: #fff;
+}
 .search_input:focus {
     width: 80%;
     border-bottom: 2px solid #5ba4d5;
@@ -279,7 +281,7 @@ padding-right: 50px !important;
 .start_btn, .start_btn:hover {
     border: none;
     border-radius: 5px;
-    background: #2285c7;
+    background: #3c4859;
     font-family: 'Noto Kufi Arabic','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     color: #ffffff;
     text-decoration: none;
@@ -291,6 +293,7 @@ padding-right: 50px !important;
     padding-top: 6px;
     margin-right: 10px;
     font-size: 20px;
+    margin-top: 8px;
 }
 
 .navbar-nav a,.navbar-nav a:hover {

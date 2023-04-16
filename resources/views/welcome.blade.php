@@ -64,7 +64,7 @@
       "ctaText":"أبدا الدردشة",
       "borderRadius":"25",
       "autoShow":false,
-      "phoneNumber":"0096566164466"
+      "phoneNumber":"96566164466"
   }
 };
     s.onload = function() {
