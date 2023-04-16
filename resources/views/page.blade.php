@@ -56,12 +56,12 @@
 
               <ul class="navbar-nav">
                 <li class="dropdown nav-item dropdown-mega">
-                  <a href="#features" class="dropdown-toggle nav-link" aria-expanded="true"><span class="fa fa-star"></span>
+                  <a href="{{ url('/') }}#features" class="dropdown-toggle nav-link" aria-expanded="true"><span class="fa fa-star"></span>
                   المميزات
                 </a>
                 </li>
                 <li class="dropdown nav-item dropdown-mega">
-                  <a href="#price" class="dropdown-toggle nav-link" aria-expanded="true"><span class="fa fa-usd"></span>
+                  <a href="{{ url('/') }}#price" class="dropdown-toggle nav-link" aria-expanded="true"><span class="fa fa-usd"></span>
                   الأسعار</a>
                 </li>
               </ul>
