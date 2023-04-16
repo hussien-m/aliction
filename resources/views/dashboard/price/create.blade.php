@@ -51,6 +51,11 @@
                                     </div>
 
                                     <div class="mb-3">
+                                        <label for="btn-link" class="form-label">الرابط</label>
+                                        <input type="text" name="btn-link" id="btn-link" class="form-control" value="">
+                                   </div>
+
+                                    <div class="mb-3">
                                         <label for="features" class="form-label">المميزات</label>
                                         @foreach ( $extras as $extra )
                                             <input type="checkbox" name="extra[]" class="checkbox" value="{{ $extra->id }}"

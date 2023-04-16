@@ -47,6 +47,10 @@
                                 </div>
 
                                 <div class="mb-3">
+                                     <label for="btn-link" class="form-label">الرابط</label>
+                                     <input type="text" name="btn_link" id="btn_link" class="form-control" value="{{ $price->btn_link }}">
+                                </div>
+                                <div class="mb-3">
                                      <label for="price" class="form-label">السعر</label>
                                      <input type="text" name="price" id="price" class="form-control" value="{{ $price->price }}">
                                 </div>

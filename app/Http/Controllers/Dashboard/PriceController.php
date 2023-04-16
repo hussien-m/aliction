@@ -39,6 +39,7 @@ class PriceController extends Controller
         Price::create([
             'name' => $request->name,
             'price' => $request->price,
+            'btn_link' => $request->btn_link,
         ]);
         toast('تم الحفظ بنجاح','success');
         return redirect()->route("admin.price.index");
@@ -72,6 +73,7 @@ class PriceController extends Controller
             $price = Price::findOrFail($id);
             $price->name = $request->name;
             $price->price = $request->price;
+            $price->btn_link = $request->btn_link;
             $price->save();
 
             $price->extras()->sync($request->extra);

@@ -40,7 +40,7 @@
 
 
 
-              </ul><button type="button" class="btn btn-lg btn-block btn-outline-primary">سجل الان</button>
+              </ul><a target="_blank" href="{{ $price->btn_link}}" class="btn btn-lg btn-block btn-outline-primary">سجل الان</a>
             </div>
           </div>
         @endforeach
