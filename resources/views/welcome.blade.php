@@ -36,6 +36,43 @@
          font-size: 16px;
          }
   </style>
+
+<script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?76633';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"تواصل معنا",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"{{ $option->site_name }}",
+      "brandSubTitle":"electionkw.com",
+      "brandImg":"{{ asset('images/settings/'.$option->logo) }}",
+      "welcomeText":"اهلا بك في {{ $option->site_name }}.\nكيف يمكننا مساعدتك؟",
+      "messageText":"",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"أبدا الدردشة",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"0096566164466"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
 </head><!-- End Head -->
 <!-- Section navbar -->
 <body class="saphqa-header-visible saphqa">
@@ -125,6 +162,7 @@
         </div>
     </div>
 </footer>
+
 
   <!-- Scripts -->
   <script src="{{ asset('frontend/assets/js/jquery-1.12.4.min.js') }}"></script>
