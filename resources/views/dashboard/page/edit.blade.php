@@ -86,13 +86,22 @@
 </script>
 
 <script>
-ClassicEditor
-    .create( document.querySelector( '#content' ), {
-        language: 'ar',
-        contentLanguageDirection: 'rtl' // يتم تعيين الاتجاه الى اليمين-الى-اليسار
-    } )
-    .catch( error => {
-        console.error( error );
-    } );
+    ClassicEditor
+        .create( document.querySelector( '#content' ), {
+            ckfinder: {
+                language: 'ar',
+                contentLanguageDirection: 'rtl',
+                uploadUrl: '{{ route('admin.ckeditor.image-upload', ['_token' => csrf_token()]) }}',
+                options: {
+                    resourceType: 'Images',
+                    disallowedExtensions: ['php','html','js','exe','bat','sh','py','pl','cgi','jar','app','com','scr','pif','vb','vbs','reg','msi','msp','aspx','ascx','asmx','asax','cs','config','ini','htaccess','htpasswd','log','txt','zip','rar','tar','gz','gzip','csv'],
+                }
+            },
+            language: 'ar',
+            licenseKey: '',
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
 </script>
 @endsection
