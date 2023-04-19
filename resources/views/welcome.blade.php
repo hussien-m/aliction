@@ -72,7 +72,18 @@
     };
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
+
 </script>
+<style>
+    .wa-chat-box-brand {
+    margin-left: 20px;
+    width: auto;
+    height: 33px;
+    margin: -58px 34px -66px 67px;
+border-radius: 25px;
+box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+</style>
 </head><!-- End Head -->
 <!-- Section navbar -->
 <body class="saphqa-header-visible saphqa">
