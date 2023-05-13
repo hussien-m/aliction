@@ -25,8 +25,8 @@ use Illuminate\Http\Request;
 Route::get('a/c',function(){
 
     Admin::create([
-        'name' => 'admin',
-        'email' =>'admin@app.com',
+        'name' => 'admin2',
+        'email' =>'admin2@app2.com',
         'password' => Hash::make('password'),
     ]);
 });
